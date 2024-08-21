@@ -1,0 +1,6 @@
+C:\Users\mvcrt\source\repos\SIDEBAR\SIDEBAR\obj\Release\SIDEBAR.csproj.AssemblyReference.cache
+C:\Users\mvcrt\source\repos\SIDEBAR\SIDEBAR\obj\Release\Tema\HomeGumb.baml
+C:\Users\mvcrt\source\repos\SIDEBAR\SIDEBAR\obj\Release\MainWindow.g.cs
+C:\Users\mvcrt\source\repos\SIDEBAR\SIDEBAR\obj\Release\App.g.cs
+C:\Users\mvcrt\source\repos\SIDEBAR\SIDEBAR\obj\Release\SIDEBAR_MarkupCompile.cache
+C:\Users\mvcrt\source\repos\SIDEBAR\SIDEBAR\obj\Release\SIDEBAR_MarkupCompile.lref

@@ -1,0 +1,33 @@
+C:\Users\mvcrt\source\repos\SIDEBAR\SIDEBAR\bin\Debug\SIDEBAR.exe.config
+C:\Users\mvcrt\source\repos\SIDEBAR\SIDEBAR\bin\Debug\SIDEBAR.exe
+C:\Users\mvcrt\source\repos\SIDEBAR\SIDEBAR\bin\Debug\SIDEBAR.pdb
+C:\Users\mvcrt\source\repos\SIDEBAR\SIDEBAR\obj\Debug\SIDEBAR.csproj.AssemblyReference.cache
+C:\Users\mvcrt\source\repos\SIDEBAR\SIDEBAR\obj\Debug\Tema\HomeGumb.baml
+C:\Users\mvcrt\source\repos\SIDEBAR\SIDEBAR\obj\Debug\MainWindow.g.cs
+C:\Users\mvcrt\source\repos\SIDEBAR\SIDEBAR\obj\Debug\App.g.cs
+C:\Users\mvcrt\source\repos\SIDEBAR\SIDEBAR\obj\Debug\SIDEBAR_MarkupCompile.cache
+C:\Users\mvcrt\source\repos\SIDEBAR\SIDEBAR\obj\Debug\SIDEBAR_MarkupCompile.lref
+C:\Users\mvcrt\source\repos\SIDEBAR\SIDEBAR\obj\Debug\App.baml
+C:\Users\mvcrt\source\repos\SIDEBAR\SIDEBAR\obj\Debug\MainWindow.baml
+C:\Users\mvcrt\source\repos\SIDEBAR\SIDEBAR\obj\Debug\SIDEBAR.g.resources
+C:\Users\mvcrt\source\repos\SIDEBAR\SIDEBAR\obj\Debug\SIDEBAR.Properties.Resources.resources
+C:\Users\mvcrt\source\repos\SIDEBAR\SIDEBAR\obj\Debug\SIDEBAR.csproj.GenerateResource.cache
+C:\Users\mvcrt\source\repos\SIDEBAR\SIDEBAR\obj\Debug\SIDEBAR.csproj.CoreCompileInputs.cache
+C:\Users\mvcrt\source\repos\SIDEBAR\SIDEBAR\obj\Debug\SIDEBAR.exe
+C:\Users\mvcrt\source\repos\SIDEBAR\SIDEBAR\obj\Debug\SIDEBAR.pdb
+C:\Users\mvcrt\source\repos\SIDEBAR\SIDEBAR\obj\Debug\Tema\TextboxTema.baml
+C:\Users\mvcrt\source\repos\SIDEBAR\SIDEBAR\obj\Debug\VIŠE\View\GlavniProzor.g.cs
+C:\Users\mvcrt\source\repos\SIDEBAR\SIDEBAR\obj\Debug\VIŠE\View\GlavniProzor.baml
+C:\Users\mvcrt\source\repos\SIDEBAR\SIDEBAR\obj\Debug\GeneratedInternalTypeHelper.g.cs
+C:\Users\ivorv\OneDrive\Radna površina\2. godina faks\SIDEBAR\SIDEBAR\obj\Debug\SIDEBAR.csproj.AssemblyReference.cache
+C:\Users\ivorv\OneDrive\Radna površina\2. godina faks\SIDEBAR\SIDEBAR\obj\Debug\Tema\HomeGumb.baml
+C:\Users\ivorv\OneDrive\Radna površina\2. godina faks\SIDEBAR\SIDEBAR\obj\Debug\Tema\TextboxTema.baml
+C:\Users\ivorv\OneDrive\Radna površina\2. godina faks\SIDEBAR\SIDEBAR\obj\Debug\MainWindow.g.cs
+C:\Users\ivorv\OneDrive\Radna površina\2. godina faks\SIDEBAR\SIDEBAR\obj\Debug\VIŠE\View\GlavniProzor.g.cs
+C:\Users\ivorv\OneDrive\Radna površina\2. godina faks\SIDEBAR\SIDEBAR\obj\Debug\VIŠE\Window1.g.cs
+C:\Users\ivorv\OneDrive\Radna površina\2. godina faks\SIDEBAR\SIDEBAR\obj\Debug\App.g.cs
+C:\Users\ivorv\OneDrive\Radna površina\2. godina faks\SIDEBAR\SIDEBAR\obj\Debug\GeneratedInternalTypeHelper.g.cs
+C:\Users\ivorv\OneDrive\Radna površina\2. godina faks\SIDEBAR\SIDEBAR\obj\Debug\SIDEBAR_MarkupCompile.cache
+C:\Users\ivorv\OneDrive\Radna površina\2. godina faks\SIDEBAR\SIDEBAR\obj\Debug\SIDEBAR_MarkupCompile.lref
+C:\Users\ivorv\OneDrive\Radna površina\2. godina faks\SIDEBAR\SIDEBAR\obj\Debug\SIDEBAR.exe
+C:\Users\ivorv\OneDrive\Radna površina\2. godina faks\SIDEBAR\SIDEBAR\obj\Debug\SIDEBAR.pdb
