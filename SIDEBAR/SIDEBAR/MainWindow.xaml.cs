@@ -13,26 +13,37 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
+
 namespace SIDEBAR
-{
-    /// <summary>
-    /// Interaction logic for MainWindow.xaml
-    /// </summary>
-    public partial class MainWindow : Window
     {
-        public MainWindow()
+        public partial class MainWindow : Window
         {
-            InitializeComponent();
-        }
+            public MainWindow()
+            {
+                InitializeComponent();
+            }
 
-        private void RadioButton_Checked(object sender, RoutedEventArgs e)
-        {
+            private void Minimize_Click(object sender, RoutedEventArgs e)
+            {
+                this.WindowState = WindowState.Minimized;
+            }
 
-        }
+            private void MaximizeRestore_Click(object sender, RoutedEventArgs e)
+            {
+                if (this.WindowState == WindowState.Maximized)
+                {
+                    this.WindowState = WindowState.Normal;
+                }
+                else
+                {
+                    this.WindowState = WindowState.Maximized;
+                }
+            }
 
-        private void RadioButton_Checked_1(object sender, RoutedEventArgs e)
-        {
-
+            private void Close_Click(object sender, RoutedEventArgs e)
+            {
+                this.Close();
+            }
         }
     }
-}
+
