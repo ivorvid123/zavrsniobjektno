@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace SIDEBAR.VIŠE.ViewModel
 {
-    public class HomeView
+    public class FilmoviISerijeViewModel
     {
     }
 }

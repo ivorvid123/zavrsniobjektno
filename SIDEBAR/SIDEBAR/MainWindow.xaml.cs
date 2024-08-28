@@ -15,35 +15,51 @@ using System.Windows.Shapes;
 
 
 namespace SIDEBAR
+{
+    public partial class MainWindow : Window
     {
-        public partial class MainWindow : Window
+        public MainWindow()
         {
-            public MainWindow()
-            {
-                InitializeComponent();
-            }
+            InitializeComponent();
+        }
 
-            private void Minimize_Click(object sender, RoutedEventArgs e)
-            {
-                this.WindowState = WindowState.Minimized;
-            }
+        private void Minimize_Click(object sender, RoutedEventArgs e)
+        {
+            this.WindowState = WindowState.Minimized;
+        }
 
-            private void MaximizeRestore_Click(object sender, RoutedEventArgs e)
+        private void MaximizeRestore_Click(object sender, RoutedEventArgs e)
+        {
+            if (this.WindowState == WindowState.Maximized)
             {
-                if (this.WindowState == WindowState.Maximized)
-                {
-                    this.WindowState = WindowState.Normal;
-                }
-                else
-                {
-                    this.WindowState = WindowState.Maximized;
-                }
+                this.WindowState = WindowState.Normal;
             }
-
-            private void Close_Click(object sender, RoutedEventArgs e)
+            else
             {
-                this.Close();
+                this.WindowState = WindowState.Maximized;
             }
         }
+
+        private void Close_Click(object sender, RoutedEventArgs e)
+        {
+            this.Close();
+        }
+        public void Nakedgun(object sender, RoutedEventArgs e)
+        {
+
+        }
+        public void Deadpool(object sender, RoutedEventArgs e)
+        {
+
+        }
+        public void jumpstreet(object sender, RoutedEventArgs e)
+        {
+
+        }
+        public void MontyPython(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
+}
 

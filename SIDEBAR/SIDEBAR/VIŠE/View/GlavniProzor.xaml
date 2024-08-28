@@ -67,51 +67,40 @@
                 Margin="0,10,0,20"/>
         <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
 
-            <Border Width="150"
+            <Button Width="180"
                     Height="150"
-                    Background="Gray"
-                    CornerRadius="10" Margin="0,0,0,0">
-                <Border.Clip>
-                    <RectangleGeometry Rect="0,0,150,150"/>
+                    Background="Transparent"
+                    BorderBrush="Transparent"
+                    >
 
-                </Border.Clip>
                 <Image Source="/SLIKE/21.jpg"/>
-            </Border>
+            </Button>
 
-            <Border Width="150"
+            <Button Width="180"
         Height="150"
-        Background="AliceBlue"
-        CornerRadius="10"
-        Margin="20,0,0,0">
-                <Border.Clip>
-                    <RectangleGeometry Rect="0,0,150,150"/>
-
-                </Border.Clip>
+        Background="Transparent"
+        BorderBrush="Transparent"
+        >
+                
                 <Image Source="/SLIKE/naked gun.jpg"/>
-            </Border>
+            </Button>
 
-            <Border Width="150"
+            <Button Width="180"
         Height="150"
-        Background="Firebrick"
-        CornerRadius="10" Margin="20,0,0,0">
-                <Border.Clip>
-                    <RectangleGeometry Rect="0,0,150,150"/>
-
-                </Border.Clip>
+        Background="Transparent"
+        BorderBrush="Transparent"
+        >
                 <Image Source="/SLIKE/deadpool.jpg"/>
-            </Border>
+            </Button>
 
-            
-            <Border Width="150"
+
+            <Button Width="181"
 Height="150"
-Background="Honeydew"
-CornerRadius="10" Margin="20,0,0,0">
-                <Border.Clip>
-                    <RectangleGeometry Rect="0,0,150,150"/>
-
-                </Border.Clip>
+Background="Transparent"
+BorderBrush="Transparent"                   
+>
                 <Image Source="/SLIKE/monty.jpg"/>
-            </Border>
+            </Button>
 
         </StackPanel>
 

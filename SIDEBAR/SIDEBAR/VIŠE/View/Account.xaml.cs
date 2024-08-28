@@ -16,15 +16,13 @@ using System.Windows.Shapes;
 namespace SIDEBAR.VIŠE.View
 {
     /// <summary>
-    /// Interaction logic for GlavniProzor.xaml
+    /// Interaction logic for Account.xaml
     /// </summary>
-    public partial class GlavniProzor : UserControl
+    public partial class Account : UserControl
     {
-        public GlavniProzor()
+        public Account()
         {
             InitializeComponent();
         }
-
-       
     }
 }

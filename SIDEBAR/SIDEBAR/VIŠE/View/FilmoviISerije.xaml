@@ -1,0 +1,61 @@
+﻿<UserControl x:Class="SIDEBAR.VIŠE.View.FilmoviISerije"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:SIDEBAR.VIŠE.View"
+             mc:Ignorable="d" d:DesignWidth="800" Height="501">
+    <StackPanel>
+       
+        <StackPanel Orientation="Horizontal">
+           
+        </StackPanel>
+        <TextBlock Text=" Filmovi i Serije"
+                Foreground="White"
+                FontSize="30"
+                HorizontalAlignment="Left"
+                Margin="0,10,0,20"/>
+        <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" MaxWidth="5000">
+
+            <Button Width="180"
+                    Height="150"
+                    Background="Transparent"
+                    BorderBrush="Transparent"
+                    >
+
+                <Image Source="/SLIKE/21.jpg"/>
+            </Button>
+
+            <Button Width="180"
+        Height="150"
+        Background="Transparent"
+        BorderBrush="Transparent"
+        >
+
+                <Image Source="/SLIKE/naked gun.jpg"/>
+            </Button>
+
+            <Button Width="180"
+        Height="150"
+        Background="Transparent"
+        BorderBrush="Transparent"
+        >
+                <Image Source="/SLIKE/deadpool.jpg"/>
+            </Button>
+
+
+            <Button Width="181"
+Height="150"
+Background="Transparent"
+BorderBrush="Transparent"                   
+>
+                <Image Source="/SLIKE/monty.jpg"/>
+            </Button>
+
+        </StackPanel>
+
+        <StackPanel>
+
+        </StackPanel>
+    </StackPanel>
+</UserControl>
