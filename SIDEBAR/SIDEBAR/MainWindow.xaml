@@ -11,14 +11,16 @@
         ResizeMode="NoResize"
         Background="Transparent"
         AllowsTransparency="True">
-
+   
     <Window.DataContext>
         <ViewModel:GlavniViewModel/>
     </Window.DataContext>
-
+    
     <Border Background="#272426"
             CornerRadius = "20">
         <Grid>
+            
+            
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="200"/>
                 <ColumnDefinition/>
@@ -99,7 +101,8 @@
             <ContentControl Grid.Row="2"
                             Grid.Column="1"
                             Margin="10,10,10,0"
-                            Content="{Binding TrenutniPrikaz}" Grid.RowSpan="2"/>
+                            Content="{Binding TrenutniPrikaz}" Grid.RowSpan="2"
+                            x:Name="MainContent" />
 
         </Grid>
     </Border>

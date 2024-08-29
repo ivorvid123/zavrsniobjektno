@@ -57,6 +57,8 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="VIŠE\ViewModel\OpisVM.cs" />
+    <Compile Include="VIŠE\View\Movie.cs" />
     <Compile Include="VIŠE\ViewModel\AccountVM.cs" />
     <Compile Include="VIŠE\View\Account.xaml.cs">
       <DependentUpon>Account.xaml</DependentUpon>
@@ -74,6 +76,9 @@
     </Compile>
     <Compile Include="VIŠE\View\MojaLista.xaml.cs">
       <DependentUpon>MojaLista.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="VIŠE\View\MovieDescription.xaml.cs">
+      <DependentUpon>MovieDescription.xaml</DependentUpon>
     </Compile>
     <Page Include="VIŠE\View\Account.xaml">
       <SubType>Designer</SubType>
@@ -109,6 +114,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="VIŠE\View\MojaLista.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="VIŠE\View\MovieDescription.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -160,6 +169,12 @@
   </ItemGroup>
   <ItemGroup>
     <Resource Include="SLIKE\21.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="SLIKE\face.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="SLIKE\tropicthund.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

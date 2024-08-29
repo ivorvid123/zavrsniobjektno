@@ -30,6 +30,8 @@ namespace SIDEBAR.VIŠE.ViewModel
         public ICommand PrikaziHomeCommand { get; }
         public ICommand PrikaziAccountCommand { get; }
 
+        public ICommand ShowDescriptionCommand { get; }
+
 
         public GlavniViewModel()
         {
@@ -44,6 +46,8 @@ namespace SIDEBAR.VIŠE.ViewModel
             PrikaziHomeCommand = new RelayCommand(_ => ShowHome());
 
             PrikaziAccountCommand = new RelayCommand(_ => ShowAccount());
+
+            ShowDescriptionCommand = new RelayCommand(_ => ShowDescription());
         }
 
         private void ShowAccount()
@@ -68,6 +72,15 @@ namespace SIDEBAR.VIŠE.ViewModel
             // Update the current view
             TrenutniPrikaz = listaview;
         }
+        private void ShowDescription()
+        {
+            var sampleMovie = new Movie("Sample Title", 8.5, "sample_image.jpg", "Sample Description");
+            var viewModel = new OpisVM(sampleMovie);
+            var opisView = new VIŠE.View.MovieDescription(viewModel);
+
+            TrenutniPrikaz = opisView;
+        }
+
         private void ShowFilmoviISerije()
         {
             // Create the UserControl instance

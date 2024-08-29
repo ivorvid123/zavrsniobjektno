@@ -5,258 +5,50 @@
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:local="clr-namespace:SIDEBAR.VIŠE.View"
              mc:Ignorable="d" d:DesignWidth="800" Height="501">
-    <ScrollViewer>
-    <StackPanel>
-       
-        
-        
-        <TextBlock Text=" Filmovi i Serije"
-                Foreground="White"
-                FontSize="30"
-                HorizontalAlignment="Left"
-                Margin="0,10,0,20"/>
-            <StackPanel Orientation="Horizontal">
-
-            </StackPanel>
-
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="50"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="170"/>
+            <ColumnDefinition Width="391*"/>
+            <ColumnDefinition Width="239*"/>
+        </Grid.ColumnDefinitions>
+        <Grid Grid.RowSpan="2">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="56*"/>
+                <RowDefinition Height="111*"/>
+            </Grid.RowDefinitions>
+        </Grid>
+        <ScrollViewer Background="#272426" Grid.ColumnSpan="3" Grid.RowSpan="2">
             <StackPanel>
-           
-            <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" MaxWidth="5000">
+                <TextBlock Margin="10" FontSize="22" FontWeight="Medium">   <Run Language="en-gb" Text="Filmovi i Serije" Foreground="White"/></TextBlock>
+                <StackPanel Margin="20 0">
+                    <ItemsControl x:Name="ListViewMovie" ItemsSource="{Binding Movie}">
+                        <ItemsControl.ItemTemplate>
+                            <DataTemplate>
+                                <Border Margin="10" Width="150" Height="200">
+                                    <StackPanel>
+                                        <Button Width="140" Height="140"  Margin="5" Command="{Binding ShowDescription}">
 
-                <Button Width="180"
-                    Height="150"
-                    Background="Transparent"
-                    BorderBrush="Transparent"
-                    >
+                                            <Image Source="{Binding Image}"></Image>
 
-                    <Image Source="/SLIKE/21.jpg"/>
-                </Button>
-
-                <Button Width="180"
-        Height="150"
-        Background="Transparent"
-        BorderBrush="Transparent"
-        >
-
-                    <Image Source="/SLIKE/naked gun.jpg"/>
-                </Button>
-
-                <Button Width="180"
-        Height="150"
-        Background="Transparent"
-        BorderBrush="Transparent"
-        >
-                    <Image Source="/SLIKE/deadpool.jpg"/>
-                </Button>
-
-
-                <Button Width="181"
-Height="150"
-Background="Transparent"
-BorderBrush="Transparent"                   
->
-                    <Image Source="/SLIKE/monty.jpg"/>
-                </Button>
-
+                                        </Button>
+                                        <TextBlock Foreground="White" Margin="5" Text="{Binding Ocjena, StringFormat=Ocjena: {0}}" FontSize="17" FontFamily="Franklin Gothic Medium"/>
+                                        <TextBlock Foreground="White"  Margin="5 0" Text="{Binding Ime}" FontSize="15"/>
+                                    </StackPanel>
+                                </Border>
+                            </DataTemplate>
+                        </ItemsControl.ItemTemplate>
+                        <ItemsControl.ItemsPanel>
+                            <ItemsPanelTemplate>
+                                <WrapPanel/>
+                            </ItemsPanelTemplate>
+                        </ItemsControl.ItemsPanel>
+                    </ItemsControl>
+                </StackPanel>
             </StackPanel>
-                <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" MaxWidth="5000">
-
-                    <Button Width="180"
-                    Height="150"
-                    Background="Transparent"
-                    BorderBrush="Transparent"
-                    >
-
-                        <Image Source="/SLIKE/21.jpg"/>
-                    </Button>
-
-                    <Button Width="180"
-        Height="150"
-        Background="Transparent"
-        BorderBrush="Transparent"
-        >
-
-                        <Image Source="/SLIKE/naked gun.jpg"/>
-                    </Button>
-
-                    <Button Width="180"
-        Height="150"
-        Background="Transparent"
-        BorderBrush="Transparent"
-        >
-                        <Image Source="/SLIKE/deadpool.jpg"/>
-                    </Button>
-
-
-                    <Button Width="181"
-Height="150"
-Background="Transparent"
-BorderBrush="Transparent"                   
->
-                        <Image Source="/SLIKE/monty.jpg"/>
-                    </Button>
-
-                </StackPanel>
-                <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" MaxWidth="5000">
-
-                    <Button Width="180"
-                    Height="150"
-                    Background="Transparent"
-                    BorderBrush="Transparent"
-                    >
-
-                        <Image Source="/SLIKE/21.jpg"/>
-                    </Button>
-
-                    <Button Width="180"
-        Height="150"
-        Background="Transparent"
-        BorderBrush="Transparent"
-        >
-
-                        <Image Source="/SLIKE/naked gun.jpg"/>
-                    </Button>
-
-                    <Button Width="180"
-        Height="150"
-        Background="Transparent"
-        BorderBrush="Transparent"
-        >
-                        <Image Source="/SLIKE/deadpool.jpg"/>
-                    </Button>
-
-
-                    <Button Width="181"
-Height="150"
-Background="Transparent"
-BorderBrush="Transparent"                   
->
-                        <Image Source="/SLIKE/monty.jpg"/>
-                    </Button>
-
-                </StackPanel>
-                <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" MaxWidth="5000">
-
-                    <Button Width="180"
-                    Height="150"
-                    Background="Transparent"
-                    BorderBrush="Transparent"
-                    >
-
-                        <Image Source="/SLIKE/21.jpg"/>
-                    </Button>
-
-                    <Button Width="180"
-        Height="150"
-        Background="Transparent"
-        BorderBrush="Transparent"
-        >
-
-                        <Image Source="/SLIKE/naked gun.jpg"/>
-                    </Button>
-
-                    <Button Width="180"
-        Height="150"
-        Background="Transparent"
-        BorderBrush="Transparent"
-        >
-                        <Image Source="/SLIKE/deadpool.jpg"/>
-                    </Button>
-
-
-                    <Button Width="181"
-Height="150"
-Background="Transparent"
-BorderBrush="Transparent"                   
->
-                        <Image Source="/SLIKE/monty.jpg"/>
-                    </Button>
-
-                </StackPanel>
-                <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" MaxWidth="5000">
-
-                    <Button Width="180"
-                    Height="150"
-                    Background="Transparent"
-                    BorderBrush="Transparent"
-                    >
-
-                        <Image Source="/SLIKE/21.jpg"/>
-                    </Button>
-
-                    <Button Width="180"
-        Height="150"
-        Background="Transparent"
-        BorderBrush="Transparent"
-        >
-
-                        <Image Source="/SLIKE/naked gun.jpg"/>
-                    </Button>
-
-                    <Button Width="180"
-        Height="150"
-        Background="Transparent"
-        BorderBrush="Transparent"
-        >
-                        <Image Source="/SLIKE/deadpool.jpg"/>
-                    </Button>
-
-
-                    <Button Width="181"
-Height="150"
-Background="Transparent"
-BorderBrush="Transparent"                   
->
-                        <Image Source="/SLIKE/monty.jpg"/>
-                    </Button>
-
-                </StackPanel>
-                <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" MaxWidth="5000">
-
-                    <Button Width="180"
-                    Height="150"
-                    Background="Transparent"
-                    BorderBrush="Transparent"
-                    >
-
-                        <Image Source="/SLIKE/21.jpg"/>
-                    </Button>
-
-                    <Button Width="180"
-        Height="150"
-        Background="Transparent"
-        BorderBrush="Transparent"
-        >
-
-                        <Image Source="/SLIKE/naked gun.jpg"/>
-                    </Button>
-
-                    <Button Width="180"
-        Height="150"
-        Background="Transparent"
-        BorderBrush="Transparent"
-        >
-                        <Image Source="/SLIKE/deadpool.jpg"/>
-                    </Button>
-
-
-                    <Button Width="181"
-Height="150"
-Background="Transparent"
-BorderBrush="Transparent"                   
->
-                        <Image Source="/SLIKE/monty.jpg"/>
-                    </Button>
-
-                </StackPanel>
-
-                <StackPanel>
-        
-    </StackPanel>
-        
-    </StackPanel>
-    
-
-    </StackPanel>
-    </ScrollViewer>
+        </ScrollViewer>
+    </Grid>
 </UserControl>

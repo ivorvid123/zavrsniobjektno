@@ -1,4 +1,5 @@
-﻿using System;
+﻿using SIDEBAR.VIŠE.View;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -21,6 +22,7 @@ namespace SIDEBAR
         public MainWindow()
         {
             InitializeComponent();
+            
         }
 
         private void Minimize_Click(object sender, RoutedEventArgs e)
@@ -44,22 +46,10 @@ namespace SIDEBAR
         {
             this.Close();
         }
-        public void Nakedgun(object sender, RoutedEventArgs e)
-        {
 
-        }
-        public void Deadpool(object sender, RoutedEventArgs e)
-        {
+        
 
-        }
-        public void jumpstreet(object sender, RoutedEventArgs e)
-        {
 
-        }
-        public void MontyPython(object sender, RoutedEventArgs e)
-        {
-
-        }
     }
 }
 

@@ -58,3 +58,5 @@ C:\Users\mvcrt\Documents\GitHub\zavrsniobjektno\SIDEBAR\SIDEBAR\obj\Debug\VIŠE\
 C:\Users\mvcrt\Documents\GitHub\zavrsniobjektno\SIDEBAR\SIDEBAR\obj\Debug\VIŠE\View\MojaLista.baml
 C:\Users\mvcrt\Documents\GitHub\zavrsniobjektno\SIDEBAR\SIDEBAR\obj\Debug\VIŠE\View\Account.g.cs
 C:\Users\mvcrt\Documents\GitHub\zavrsniobjektno\SIDEBAR\SIDEBAR\obj\Debug\VIŠE\View\Account.baml
+C:\Users\mvcrt\Documents\GitHub\zavrsniobjektno\SIDEBAR\SIDEBAR\obj\Debug\VIŠE\View\MovieDescription.g.cs
+C:\Users\mvcrt\Documents\GitHub\zavrsniobjektno\SIDEBAR\SIDEBAR\obj\Debug\VIŠE\View\MovieDescription.baml
