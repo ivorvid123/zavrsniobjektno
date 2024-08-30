@@ -30,10 +30,10 @@
                             <DataTemplate>
                                 <Border Margin="10" Width="150" Height="200">
                                     <StackPanel>
-                                        <Button Width="140" Height="140"  Margin="5" Click="MovieButton_Click">
-
-                                            <Image Source="{Binding Image}"></Image>
-
+                                        <Button Width="150" Height="200"  Foreground="Black" Click="MovieButton_Click">
+                                            <Button.Background>
+                                                <ImageBrush ImageSource="{Binding Image}"></ImageBrush>
+                                            </Button.Background>
                                         </Button>
                                         <TextBlock Foreground="White" Margin="5" Text="{Binding Ocjena, StringFormat=Ocjena: {0}}" FontSize="17" FontFamily="Franklin Gothic Medium"/>
                                         <TextBlock Foreground="White"  Margin="5 0" Text="{Binding Ime}" FontSize="15"/>

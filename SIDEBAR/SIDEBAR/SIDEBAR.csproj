@@ -176,5 +176,61 @@
   <ItemGroup>
     <Resource Include="SLIKE\tropicthund.jpg" />
   </ItemGroup>
+  <ItemGroup>
+    <Resource Include="SLIKE\avengers.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="SLIKE\joker.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="SLIKE\spider2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="SLIKE\once.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="SLIKE\best.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="SLIKE\dune.jpg" />
+    <Resource Include="SLIKE\dune2.jpg" />
+    <Resource Include="SLIKE\email.jpg" />
+    <Resource Include="SLIKE\email.png" />
+    <Resource Include="SLIKE\mulan.jpg" />
+    <Resource Include="SLIKE\vs.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="SLIKE\bee.jpg" />
+    <Resource Include="SLIKE\deadpool3.jpg" />
+    <Resource Include="SLIKE\death.jpg" />
+    <Resource Include="SLIKE\elevator.jpg" />
+    <Resource Include="SLIKE\free.jpg" />
+    <Resource Include="SLIKE\king.jpg" />
+    <Resource Include="SLIKE\kingsman.jpg" />
+    <Resource Include="SLIKE\kingsman2.jpg" />
+    <Resource Include="SLIKE\meangirls.jpg" />
+    <Resource Include="SLIKE\topgun.jpg" />
+    <Resource Include="SLIKE\us.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="SLIKE\janet.jpg" />
+    <Resource Include="SLIKE\topgun2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="SLIKE\aline.jpg" />
+    <Resource Include="SLIKE\deadpool2.jpg" />
+    <Resource Include="SLIKE\gru.jpg" />
+    <Resource Include="SLIKE\gru2.jpg" />
+    <Resource Include="SLIKE\gru3.jpg" />
+    <Resource Include="SLIKE\gru4.jpg" />
+    <Resource Include="SLIKE\inside.jpg" />
+    <Resource Include="SLIKE\twist.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="SLIKE\inside2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="SLIKE\filmex.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

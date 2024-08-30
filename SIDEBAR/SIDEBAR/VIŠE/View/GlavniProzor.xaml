@@ -4,16 +4,18 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:local="clr-namespace:SIDEBAR.VIŠE.View"
-             mc:Ignorable="d" d:DesignWidth="800" Height="501">
+             mc:Ignorable="d" d:DesignWidth="700" Height="501">
     <StackPanel Margin="0,0,0,-56">
+
         <TextBlock Text="Dobrodošli!"
                        Foreground="White"
                        FontSize="30"
-                       HorizontalAlignment="Left"
-                       Margin="0,10,0,20"/>
+                       FontWeight="Bold"
+                   Margin="10"
+                       />
 
         <StackPanel Orientation="Horizontal">
-            <Border Width="400" Height="200" Background="#FEB337" CornerRadius="10">
+            <Border Width="400" Height="200" Margin="10,0,0,0" Background="#FEB337" CornerRadius="10">
 
                 <Border.Clip>
                     <RectangleGeometry Rect="0,0,400,200"/>
@@ -23,24 +25,25 @@
                         <TextBlock Text="Najbolja Aplikacija za"
                                    Foreground="Black"
                                    FontSize="28"
+                                   FontWeight="DemiBold"
                                    Margin="20,10,10,0"
                                    
                                    />
                         <TextBlock Text="IZRADU LISTA FILMOVA"
                                      Foreground="Black"
+                                    FontWeight="Bold"
                                      FontSize="32"
                                    Margin="20,5,10,0"
                                      />
-
                         <TextBlock Text="Počnite ODMAH!"
                                     Foreground="Black"
                                     FontSize="18"
-                                    Margin="10,20,0,0"
+                                   FontWeight="Medium" Width="356"
                                     />
                     </StackPanel>
 
                     <Image
-                           Source="/SLIKE/Likac.png" Margin="141,86,29,-106" RenderTransformOrigin="0.5,0.5">
+                           Source="/SLIKE/Likac.png" Margin="141,81,29,-101" RenderTransformOrigin="0.5,0.5">
                         <Image.RenderTransform>
                             <TransformGroup>
                                 <ScaleTransform/>
@@ -52,61 +55,67 @@
                     </Image>
 
                 </Grid>
+
             </Border>
-            <Border Width="200"
+            <Border Width="204"
                     Height="200"
                     CornerRadius="10"
                     Margin="50,0,0,0"
                     Background="#EE8232">
-
+                <StackPanel>
+                    <TextBlock Text=" Step 1. " FontWeight="Bold" FontSize="25" Height="57"></TextBlock>
+                    <TextBlock Text=" Kliknite na izborniku" FontWeight="Bold" FontSize="19.5" Height="33" Width="198"/>
+                    <Image Source="/SLIKE/filmex.png" Height="74" Width="188"/>
+                </StackPanel>
+                <Border.Effect>
+                    <DropShadowEffect BlurRadius="10" Color="Black" Direction="235" Opacity=".5"
+           RenderingBias="Quality" ShadowDepth="10" />
+                </Border.Effect>
             </Border>
-        </StackPanel>
-        <TextBlock Text="Naše Preporuke"
-                Foreground="White"
-                FontSize="30"
-                HorizontalAlignment="Left"
-                Margin="0,10,0,20"/>
-        <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
-
-            <Button Width="180"
-                    Height="150"
-                    Background="Transparent"
-                    BorderBrush="Transparent"
-                    >
-
-                <Image Source="/SLIKE/21.jpg"/>
-            </Button>
-
-            <Button Width="180"
-        Height="150"
-        Background="Transparent"
-        BorderBrush="Transparent"
-        >
-                
-                <Image Source="/SLIKE/naked gun.jpg"/>
-            </Button>
-
-            <Button Width="180"
-        Height="150"
-        Background="Transparent"
-        BorderBrush="Transparent"
-        >
-                <Image Source="/SLIKE/deadpool.jpg"/>
-            </Button>
-
-
-            <Button Width="181"
-Height="150"
-Background="Transparent"
-BorderBrush="Transparent"                   
->
-                <Image Source="/SLIKE/monty.jpg"/>
-            </Button>
 
         </StackPanel>
+        <Border Width="326"
+         Height="200"
+         CornerRadius="10"
+         Margin="10,10,0,0"
+         Background="#EE8232"
+                HorizontalAlignment="Left">
 
-        <StackPanel>
+            <Border.Effect>
+                <DropShadowEffect BlurRadius="20" Color="Black" Direction="235" Opacity=".5"
+RenderingBias="Quality" ShadowDepth="10" />
+            </Border.Effect>
 
-        </StackPanel>
+            <Grid Margin="0,0,-355,0">
+                <TextBlock Text=" Step 2. " FontWeight="Bold" FontSize="25" Height="57" Margin="0,10,0,133"></TextBlock>
+                <TextBlock Text="Pronađite Film ili Seriju koja Vam se sviđa I kliknite na nju" FontWeight="Bold" FontSize="20" Margin="10,59,344,-59" TextWrapping="Wrap">
+                    <TextBlock.RenderTransform>
+                        <TransformGroup>
+                            <ScaleTransform/>
+                            <SkewTransform/>
+                            <RotateTransform Angle="0.181"/>
+                            <TranslateTransform/>
+                        </TransformGroup>
+                    </TextBlock.RenderTransform></TextBlock>
+
+                <Border Width="326"
+ CornerRadius="10"
+ Margin="345,0,0,0"
+ Background="#EE8232"
+        HorizontalAlignment="Left">
+                    <Border.Effect>
+                        <DropShadowEffect BlurRadius="10" Color="Black" Direction="235" Opacity=".5"
+RenderingBias="Quality" ShadowDepth="10" />
+                    </Border.Effect>
+                    <Grid>
+                        <TextBlock Text=" Step 3. " FontWeight="Bold" FontSize="25" Height="57" Margin="0,10,0,133"></TextBlock>
+                        <TextBlock Text=" Kliknite Dodaj u listu" FontWeight="Bold" FontSize="20" TextWrapping="Wrap" Margin="0,67,0,-67" HorizontalAlignment="Center"></TextBlock>
+                    </Grid>
+                </Border>
+            </Grid>
+        </Border>
+
+
+        <StackPanel/>
     </StackPanel>
 </UserControl>

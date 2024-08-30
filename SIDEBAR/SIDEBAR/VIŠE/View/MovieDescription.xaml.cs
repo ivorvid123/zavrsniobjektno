@@ -15,7 +15,7 @@ namespace SIDEBAR.VIŠE.View
         {
             MovieTitle.Text = movie.Ime;
             MovieImage.Source = new BitmapImage(new Uri(movie.Image, UriKind.Relative));
-            MovieDetails.Text = $"{movie.Opis}\n\n Director:{movie.Director}. \n\n Ocjena: {movie.Ocjena}"; // Placeholder for actual description
+            MovieDetails.Text = $"{movie.Opis}\n\n Director:{movie.Director}. \n\n Ocjena: {movie.Ocjena} \n\n Detalji sa Imdb"; // Placeholder for actual description
         }
 
     }
