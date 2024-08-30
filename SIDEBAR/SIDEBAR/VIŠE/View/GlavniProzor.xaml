@@ -24,6 +24,7 @@
                                    Foreground="Black"
                                    FontSize="28"
                                    Margin="20,10,10,0"
+                                   
                                    />
                         <TextBlock Text="IZRADU LISTA FILMOVA"
                                      Foreground="Black"

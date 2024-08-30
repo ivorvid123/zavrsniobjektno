@@ -1,7 +1,5 @@
-﻿using SIDEBAR.VIŠE.ViewModel;
-using System;
+﻿using System;
 using System.Windows.Controls;
-using System.Windows.Input;
 using System.Windows.Media.Imaging;
 
 namespace SIDEBAR.VIŠE.View
@@ -13,11 +11,12 @@ namespace SIDEBAR.VIŠE.View
             InitializeComponent();
         }
 
-        public MovieDescription(OpisVM viewModel)
+        public void SetMovieDetails(Movie movie)
         {
-            InitializeComponent();
-            DataContext = viewModel;
+            MovieTitle.Text = movie.Ime;
+            MovieImage.Source = new BitmapImage(new Uri(movie.Image, UriKind.Relative));
+            MovieDetails.Text = $"{movie.Opis}\n\n Director:{movie.Director}. \n\n Ocjena: {movie.Ocjena}"; // Placeholder for actual description
         }
+
     }
 }
-

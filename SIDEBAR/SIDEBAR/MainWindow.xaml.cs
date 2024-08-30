@@ -1,4 +1,5 @@
 ﻿using SIDEBAR.VIŠE.View;
+using SIDEBAR.VIŠE.ViewModel;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -22,7 +23,9 @@ namespace SIDEBAR
         public MainWindow()
         {
             InitializeComponent();
-            
+            MainContent.Content = new GlavniProzor();
+
+
         }
 
         private void Minimize_Click(object sender, RoutedEventArgs e)
@@ -47,9 +50,15 @@ namespace SIDEBAR
             this.Close();
         }
 
-        
+        private void HomeButton_Click(object sender, RoutedEventArgs e)
+        {
+            MainContent.Content = new GlavniProzor();
+        }
 
-
+        private void FilmoviISerijeButton_Click(object sender, RoutedEventArgs e)
+        {
+            MainContent.Content = new FilmoviISerije();
+        }
     }
 }
 

@@ -47,7 +47,6 @@ namespace SIDEBAR.VIŠE.ViewModel
 
             PrikaziAccountCommand = new RelayCommand(_ => ShowAccount());
 
-            ShowDescriptionCommand = new RelayCommand(_ => ShowDescription());
         }
 
         private void ShowAccount()
@@ -72,14 +71,7 @@ namespace SIDEBAR.VIŠE.ViewModel
             // Update the current view
             TrenutniPrikaz = listaview;
         }
-        private void ShowDescription()
-        {
-            var sampleMovie = new Movie("Sample Title", 8.5, "sample_image.jpg", "Sample Description");
-            var viewModel = new OpisVM(sampleMovie);
-            var opisView = new VIŠE.View.MovieDescription(viewModel);
-
-            TrenutniPrikaz = opisView;
-        }
+       
 
         private void ShowFilmoviISerije()
         {

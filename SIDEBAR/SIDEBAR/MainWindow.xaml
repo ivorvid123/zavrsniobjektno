@@ -67,14 +67,14 @@
                              Foreground="White"
                              FontSize="14"
                              Style="{StaticResource HomeGumb}"
-                             Command="{Binding PrikaziHomeCommand}"/>
+                             Click="HomeButton_Click"/>
 
                 <RadioButton Content="Filmovi i Serije"
                              Foreground="White"
                              Height="50"
                              FontSize="14"
                              Style="{StaticResource HomeGumb}"
-                            Command="{Binding PrikaziFilmoviISerijeCommand}"/>
+                             Click="FilmoviISerijeButton_Click"/>
 
                 <RadioButton Content="Moja Lista"
                              Foreground="White"
