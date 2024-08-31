@@ -36,7 +36,7 @@
             </Grid.RowDefinitions>
 
             <!-- Custom Title Bar -->
-            <Grid Grid.ColumnSpan="2" Background="#2E2C2F" Height="30">
+            <Grid Grid.ColumnSpan="2" Background="#2E2C2F" Height="30" MouseLeftButtonDown="TitleBar_MouseLeftButtonDown">
                 <TextBlock Text="FilmoSkop"
                            VerticalAlignment="Center"
                            HorizontalAlignment="Left"
@@ -56,13 +56,13 @@
                     </Button>
                 </StackPanel>
             </Grid>
-
             <!-- Main Content -->
             <!-- Main Content -->
 
 
             <StackPanel Grid.Row="2" Grid.RowSpan="2">
                 <RadioButton Content="Home"
+                             FontWeight="SemiBold"
                              Height="50"
                              Foreground="White"
                              FontSize="14"
@@ -70,6 +70,7 @@
                              Click="HomeButton_Click"/>
 
                 <RadioButton Content="Filmovi i Serije"
+                             FontWeight="SemiBold"
                              Foreground="White"
                              Height="50"
                              FontSize="14"
@@ -77,27 +78,25 @@
                              Click="FilmoviISerijeButton_Click" Width="200"/>
 
                 <RadioButton Content="Moja Lista"
+                             FontWeight="SemiBold"
                              Foreground="White"
                              Height="50"
                              FontSize="14"
                              Style="{StaticResource HomeGumb}"
-                             Command="{Binding PrikaziListuCommand}"/>
+                             Click="MojaListaButton_Click" Width="200"/>
 
                 <RadioButton Content="Account"
+                             FontWeight="SemiBold"
                              Foreground="White"
                              Height="50"
                              FontSize="14"
                              Style="{StaticResource HomeGumb}"
-                             Command="{Binding PrikaziAccountCommand}"/>
+                             Click="AccountButton_Click" Width="200"/>
             </StackPanel>
 
-            <TextBox Width="200"
-                     Height="40"
-                     VerticalContentAlignment="Center"
-                     HorizontalAlignment="Left"
-                     Margin="0,2,0,3"
-                     Style="{StaticResource SearchBar}" Grid.ColumnSpan="2" Grid.Row="1"/>
-
+            <Border  Background="Orange" Grid.Row="1" BorderBrush="#272426" BorderThickness="5">
+                <TextBlock Text="Pozdrav!" HorizontalAlignment="Center" VerticalAlignment="Center" FontWeight="SemiBold" FontSize="15"></TextBlock>
+            </Border>
             <ContentControl Grid.Row="2"
                             Grid.Column="1"
                             Margin="10,10,0,0"

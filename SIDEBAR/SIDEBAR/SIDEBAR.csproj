@@ -232,5 +232,33 @@
   <ItemGroup>
     <Resource Include="SLIKE\filmex.png" />
   </ItemGroup>
+  <ItemGroup>
+    <Resource Include="SLIKE\bad.jpg" />
+    <Resource Include="SLIKE\bat.jpg" />
+    <Resource Include="SLIKE\bat2.jpg" />
+    <Resource Include="SLIKE\batbegin.jpg" />
+    <Resource Include="SLIKE\blink.png" />
+    <Resource Include="SLIKE\bones.jpg" />
+    <Resource Include="SLIKE\charlie.jpg" />
+    <Resource Include="SLIKE\crazy.jpg" />
+    <Resource Include="SLIKE\csi.jpg" />
+    <Resource Include="SLIKE\dict.jpg" />
+    <Resource Include="SLIKE\die.jpg" />
+    <Resource Include="SLIKE\django.jpg" />
+    <Resource Include="SLIKE\godfather.jpg" />
+    <Resource Include="SLIKE\gone.jpg" />
+    <Resource Include="SLIKE\house.jpg" />
+    <Resource Include="SLIKE\lib.jpg" />
+    <Resource Include="SLIKE\loki.jpg" />
+    <Resource Include="SLIKE\poot.jpeg" />
+    <Resource Include="SLIKE\pulp.jpg" />
+    <Resource Include="SLIKE\rag.jpg" />
+    <Resource Include="SLIKE\rango.jpg" />
+    <Resource Include="SLIKE\saul.jpg" />
+    <Resource Include="SLIKE\what.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="SLIKE\wed.jpg" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

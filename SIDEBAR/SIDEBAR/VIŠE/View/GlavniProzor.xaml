@@ -101,7 +101,7 @@ RenderingBias="Quality" ShadowDepth="10" />
                 <Border Width="326"
  CornerRadius="10"
  Margin="345,0,0,0"
- Background="#EE8232"
+ Background="#FEB337"
         HorizontalAlignment="Left">
                     <Border.Effect>
                         <DropShadowEffect BlurRadius="10" Color="Black" Direction="235" Opacity=".5"

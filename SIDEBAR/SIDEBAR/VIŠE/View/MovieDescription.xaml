@@ -8,7 +8,7 @@
             >
     <Grid Background="#272426">
 
-        <TextBlock x:Name="MovieTitle" FontSize="28" FontWeight="Bold" Margin="20,320,0,10" Foreground="White"/>
+        <TextBlock x:Name="MovieTitle" FontSize="28" FontWeight="Bold" Margin="20,330,0,0" Foreground="White"/>
         <Image x:Name="MovieImage" Width="200" Height="300" Margin="20" HorizontalAlignment="Left" VerticalAlignment="Top"/>
 
         <TextBlock  x:Name="MovieDetails" FontSize="18" FontWeight="Medium" Margin="236,20,10,0" TextWrapping="Wrap" Foreground="LightGray" Height="415" VerticalAlignment="Top"/>

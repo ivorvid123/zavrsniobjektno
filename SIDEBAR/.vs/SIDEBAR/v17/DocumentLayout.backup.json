@@ -3,14 +3,6 @@
   "WorkspaceRootPath": "C:\\Users\\mvcrt\\Documents\\GitHub\\zavrsniobjektno\\SIDEBAR\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{1535C828-927B-4CC0-8121-887A6AC84B30}|SIDEBAR\\SIDEBAR.csproj|C:\\Users\\mvcrt\\Documents\\GitHub\\zavrsniobjektno\\SIDEBAR\\sidebar\\vi\u0161e\\view\\glavniprozor.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{1535C828-927B-4CC0-8121-887A6AC84B30}|SIDEBAR\\SIDEBAR.csproj|solutionrelative:sidebar\\vi\u0161e\\view\\glavniprozor.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1535C828-927B-4CC0-8121-887A6AC84B30}|SIDEBAR\\SIDEBAR.csproj|C:\\Users\\mvcrt\\Documents\\GitHub\\zavrsniobjektno\\SIDEBAR\\sidebar\\vi\u0161e\\viewmodel\\glavniviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1535C828-927B-4CC0-8121-887A6AC84B30}|SIDEBAR\\SIDEBAR.csproj|solutionrelative:sidebar\\vi\u0161e\\viewmodel\\glavniviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{1535C828-927B-4CC0-8121-887A6AC84B30}|SIDEBAR\\SIDEBAR.csproj|C:\\Users\\mvcrt\\Documents\\GitHub\\zavrsniobjektno\\SIDEBAR\\sidebar\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{1535C828-927B-4CC0-8121-887A6AC84B30}|SIDEBAR\\SIDEBAR.csproj|solutionrelative:sidebar\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
@@ -19,8 +11,36 @@
       "RelativeMoniker": "D:0:0:{1535C828-927B-4CC0-8121-887A6AC84B30}|SIDEBAR\\SIDEBAR.csproj|solutionrelative:sidebar\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{1535C828-927B-4CC0-8121-887A6AC84B30}|SIDEBAR\\SIDEBAR.csproj|C:\\Users\\mvcrt\\Documents\\GitHub\\zavrsniobjektno\\SIDEBAR\\sidebar\\vi\u0161e\\viewmodel\\glavniviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1535C828-927B-4CC0-8121-887A6AC84B30}|SIDEBAR\\SIDEBAR.csproj|solutionrelative:sidebar\\vi\u0161e\\viewmodel\\glavniviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1535C828-927B-4CC0-8121-887A6AC84B30}|SIDEBAR\\SIDEBAR.csproj|C:\\Users\\mvcrt\\Documents\\GitHub\\zavrsniobjektno\\SIDEBAR\\sidebar\\tema\\homegumb.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{1535C828-927B-4CC0-8121-887A6AC84B30}|SIDEBAR\\SIDEBAR.csproj|solutionrelative:sidebar\\tema\\homegumb.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1535C828-927B-4CC0-8121-887A6AC84B30}|SIDEBAR\\SIDEBAR.csproj|C:\\Users\\mvcrt\\Documents\\GitHub\\zavrsniobjektno\\SIDEBAR\\sidebar\\vi\u0161e\\view\\moviedescription.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{1535C828-927B-4CC0-8121-887A6AC84B30}|SIDEBAR\\SIDEBAR.csproj|solutionrelative:sidebar\\vi\u0161e\\view\\moviedescription.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1535C828-927B-4CC0-8121-887A6AC84B30}|SIDEBAR\\SIDEBAR.csproj|C:\\Users\\mvcrt\\Documents\\GitHub\\zavrsniobjektno\\SIDEBAR\\sidebar\\vi\u0161e\\view\\moviedescription.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1535C828-927B-4CC0-8121-887A6AC84B30}|SIDEBAR\\SIDEBAR.csproj|solutionrelative:sidebar\\vi\u0161e\\view\\moviedescription.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{1535C828-927B-4CC0-8121-887A6AC84B30}|SIDEBAR\\SIDEBAR.csproj|C:\\Users\\mvcrt\\Documents\\GitHub\\zavrsniobjektno\\SIDEBAR\\sidebar\\vi\u0161e\\view\\filmoviiserije.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{1535C828-927B-4CC0-8121-887A6AC84B30}|SIDEBAR\\SIDEBAR.csproj|solutionrelative:sidebar\\vi\u0161e\\view\\filmoviiserije.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1535C828-927B-4CC0-8121-887A6AC84B30}|SIDEBAR\\SIDEBAR.csproj|C:\\Users\\mvcrt\\Documents\\GitHub\\zavrsniobjektno\\SIDEBAR\\sidebar\\vi\u0161e\\viewmodel\\filmoviiserijeviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1535C828-927B-4CC0-8121-887A6AC84B30}|SIDEBAR\\SIDEBAR.csproj|solutionrelative:sidebar\\vi\u0161e\\viewmodel\\filmoviiserijeviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1535C828-927B-4CC0-8121-887A6AC84B30}|SIDEBAR\\SIDEBAR.csproj|C:\\Users\\mvcrt\\Documents\\GitHub\\zavrsniobjektno\\SIDEBAR\\sidebar\\vi\u0161e\\view\\filmoviiserije.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{1535C828-927B-4CC0-8121-887A6AC84B30}|SIDEBAR\\SIDEBAR.csproj|solutionrelative:sidebar\\vi\u0161e\\view\\filmoviiserije.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1535C828-927B-4CC0-8121-887A6AC84B30}|SIDEBAR\\SIDEBAR.csproj|c:\\users\\mvcrt\\documents\\github\\zavrsniobjektno\\sidebar\\sidebar\\vi\u0161e\\view\\glavniprozor.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{1535C828-927B-4CC0-8121-887A6AC84B30}|SIDEBAR\\SIDEBAR.csproj|solutionrelative:sidebar\\vi\u0161e\\view\\glavniprozor.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{1535C828-927B-4CC0-8121-887A6AC84B30}|SIDEBAR\\SIDEBAR.csproj|C:\\Users\\mvcrt\\Documents\\GitHub\\zavrsniobjektno\\SIDEBAR\\sidebar\\vi\u0161e\\viewmodel\\homeview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -35,14 +55,6 @@
       "RelativeMoniker": "D:0:0:{1535C828-927B-4CC0-8121-887A6AC84B30}|SIDEBAR\\SIDEBAR.csproj|solutionrelative:sidebar\\vi\u0161e\\view\\glavniprozor.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1535C828-927B-4CC0-8121-887A6AC84B30}|SIDEBAR\\SIDEBAR.csproj|C:\\Users\\mvcrt\\Documents\\GitHub\\zavrsniobjektno\\SIDEBAR\\sidebar\\vi\u0161e\\view\\moviedescription.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1535C828-927B-4CC0-8121-887A6AC84B30}|SIDEBAR\\SIDEBAR.csproj|solutionrelative:sidebar\\vi\u0161e\\view\\moviedescription.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1535C828-927B-4CC0-8121-887A6AC84B30}|SIDEBAR\\SIDEBAR.csproj|C:\\Users\\mvcrt\\Documents\\GitHub\\zavrsniobjektno\\SIDEBAR\\sidebar\\vi\u0161e\\view\\moviedescription.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{1535C828-927B-4CC0-8121-887A6AC84B30}|SIDEBAR\\SIDEBAR.csproj|solutionrelative:sidebar\\vi\u0161e\\view\\moviedescription.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{1535C828-927B-4CC0-8121-887A6AC84B30}|SIDEBAR\\SIDEBAR.csproj|C:\\Users\\mvcrt\\Documents\\GitHub\\zavrsniobjektno\\SIDEBAR\\sidebar\\vi\u0161e\\viewmodel\\opisvm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{1535C828-927B-4CC0-8121-887A6AC84B30}|SIDEBAR\\SIDEBAR.csproj|solutionrelative:sidebar\\vi\u0161e\\viewmodel\\opisvm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -51,20 +63,8 @@
       "RelativeMoniker": "D:0:0:{1535C828-927B-4CC0-8121-887A6AC84B30}|SIDEBAR\\SIDEBAR.csproj|solutionrelative:sidebar\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1535C828-927B-4CC0-8121-887A6AC84B30}|SIDEBAR\\SIDEBAR.csproj|C:\\Users\\mvcrt\\Documents\\GitHub\\zavrsniobjektno\\SIDEBAR\\sidebar\\tema\\homegumb.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{1535C828-927B-4CC0-8121-887A6AC84B30}|SIDEBAR\\SIDEBAR.csproj|solutionrelative:sidebar\\tema\\homegumb.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1535C828-927B-4CC0-8121-887A6AC84B30}|SIDEBAR\\SIDEBAR.csproj|C:\\Users\\mvcrt\\Documents\\GitHub\\zavrsniobjektno\\SIDEBAR\\sidebar\\vi\u0161e\\view\\filmoviiserije.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{1535C828-927B-4CC0-8121-887A6AC84B30}|SIDEBAR\\SIDEBAR.csproj|solutionrelative:sidebar\\vi\u0161e\\view\\filmoviiserije.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{1535C828-927B-4CC0-8121-887A6AC84B30}|SIDEBAR\\SIDEBAR.csproj|C:\\Users\\mvcrt\\Documents\\GitHub\\zavrsniobjektno\\SIDEBAR\\sidebar\\vi\u0161e\\view\\movie.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{1535C828-927B-4CC0-8121-887A6AC84B30}|SIDEBAR\\SIDEBAR.csproj|solutionrelative:sidebar\\vi\u0161e\\view\\movie.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1535C828-927B-4CC0-8121-887A6AC84B30}|SIDEBAR\\SIDEBAR.csproj|C:\\Users\\mvcrt\\Documents\\GitHub\\zavrsniobjektno\\SIDEBAR\\sidebar\\vi\u0161e\\viewmodel\\filmoviiserijeviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1535C828-927B-4CC0-8121-887A6AC84B30}|SIDEBAR\\SIDEBAR.csproj|solutionrelative:sidebar\\vi\u0161e\\viewmodel\\filmoviiserijeviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{1535C828-927B-4CC0-8121-887A6AC84B30}|SIDEBAR\\SIDEBAR.csproj|C:\\Users\\mvcrt\\Documents\\GitHub\\zavrsniobjektno\\SIDEBAR\\sidebar\\vi\u0161e\\view\\mojalista.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -78,7 +78,7 @@
       "AbsoluteMoniker": "D:0:0:{00000000-0000-0000-0000-000000000000}|\u003CSolution\u003E|SIDEBAR||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1535C828-927B-4CC0-8121-887A6AC84B30}|SIDEBAR\\SIDEBAR.csproj|c:\\users\\mvcrt\\documents\\github\\zavrsniobjektno\\sidebar\\sidebar\\vi\u0161e\\view\\mojalista.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "AbsoluteMoniker": "D:0:0:{1535C828-927B-4CC0-8121-887A6AC84B30}|SIDEBAR\\SIDEBAR.csproj|C:\\Users\\mvcrt\\Documents\\GitHub\\zavrsniobjektno\\SIDEBAR\\sidebar\\vi\u0161e\\view\\mojalista.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{1535C828-927B-4CC0-8121-887A6AC84B30}|SIDEBAR\\SIDEBAR.csproj|solutionrelative:sidebar\\vi\u0161e\\view\\mojalista.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
@@ -92,9 +92,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{1535C828-927B-4CC0-8121-887A6AC84B30}|SIDEBAR\\SIDEBAR.csproj|C:\\Users\\mvcrt\\Documents\\GitHub\\zavrsniobjektno\\SIDEBAR\\sidebar\\vi\u0161e\\viewmodel\\accountvm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{1535C828-927B-4CC0-8121-887A6AC84B30}|SIDEBAR\\SIDEBAR.csproj|solutionrelative:sidebar\\vi\u0161e\\viewmodel\\accountvm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1535C828-927B-4CC0-8121-887A6AC84B30}|SIDEBAR\\SIDEBAR.csproj|c:\\users\\mvcrt\\documents\\github\\zavrsniobjektno\\sidebar\\sidebar\\||{B270807C-D8C6-49EB-8EBE-8E8D566637A1}|5e9a8ac2-4f34-4521-858f-4c248ba31532"
     }
   ],
   "DocumentGroupContainers": [
@@ -104,7 +101,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 18,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Document",
@@ -121,7 +118,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 8,
               "Title": "FilmoviISerije.xaml",
               "DocumentMoniker": "C:\\Users\\mvcrt\\Documents\\GitHub\\zavrsniobjektno\\SIDEBAR\\SIDEBAR\\VI\u0160E\\View\\FilmoviISerije.xaml",
               "RelativeDocumentMoniker": "SIDEBAR\\VI\u0160E\\View\\FilmoviISerije.xaml",
@@ -134,7 +131,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 0,
               "Title": "MainWindow.xaml",
               "DocumentMoniker": "C:\\Users\\mvcrt\\Documents\\GitHub\\zavrsniobjektno\\SIDEBAR\\SIDEBAR\\MainWindow.xaml",
               "RelativeDocumentMoniker": "SIDEBAR\\MainWindow.xaml",
@@ -147,7 +144,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 10,
               "Title": "HomeView.cs",
               "DocumentMoniker": "C:\\Users\\mvcrt\\Documents\\GitHub\\zavrsniobjektno\\SIDEBAR\\SIDEBAR\\VI\u0160E\\ViewModel\\HomeView.cs",
               "RelativeDocumentMoniker": "SIDEBAR\\VI\u0160E\\ViewModel\\HomeView.cs",
@@ -156,18 +153,17 @@
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-08-23T15:58:42.604Z",
-              "IsPinned": true,
-              "EditorCaption": ""
+              "IsPinned": true
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 6,
               "Title": "FilmoviISerije.xaml.cs",
               "DocumentMoniker": "C:\\Users\\mvcrt\\Documents\\GitHub\\zavrsniobjektno\\SIDEBAR\\SIDEBAR\\VI\u0160E\\View\\FilmoviISerije.xaml.cs",
               "RelativeDocumentMoniker": "SIDEBAR\\VI\u0160E\\View\\FilmoviISerije.xaml.cs",
               "ToolTip": "C:\\Users\\mvcrt\\Documents\\GitHub\\zavrsniobjektno\\SIDEBAR\\SIDEBAR\\VI\u0160E\\View\\FilmoviISerije.xaml.cs",
               "RelativeToolTip": "SIDEBAR\\VI\u0160E\\View\\FilmoviISerije.xaml.cs",
-              "ViewState": "AgIAAB8AAAAAAAAAAAAAAB8AAAA8AQAAAAAAAA==",
+              "ViewState": "AgIAAEIAAAAAAAAAAAAowFkAAAC1AQAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-08-28T13:53:15.385Z",
               "IsPinned": true,
@@ -175,7 +171,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 13,
               "Title": "OpisVM.cs",
               "DocumentMoniker": "C:\\Users\\mvcrt\\Documents\\GitHub\\zavrsniobjektno\\SIDEBAR\\SIDEBAR\\VI\u0160E\\ViewModel\\OpisVM.cs",
               "RelativeDocumentMoniker": "SIDEBAR\\VI\u0160E\\ViewModel\\OpisVM.cs",
@@ -183,25 +179,24 @@
               "RelativeToolTip": "SIDEBAR\\VI\u0160E\\ViewModel\\OpisVM.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAC4AAABJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-29T16:04:15.839Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-08-29T16:04:15.839Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 5,
               "Title": "MovieDescription.xaml.cs",
               "DocumentMoniker": "C:\\Users\\mvcrt\\Documents\\GitHub\\zavrsniobjektno\\SIDEBAR\\SIDEBAR\\VI\u0160E\\View\\MovieDescription.xaml.cs",
               "RelativeDocumentMoniker": "SIDEBAR\\VI\u0160E\\View\\MovieDescription.xaml.cs",
               "ToolTip": "C:\\Users\\mvcrt\\Documents\\GitHub\\zavrsniobjektno\\SIDEBAR\\SIDEBAR\\VI\u0160E\\View\\MovieDescription.xaml.cs",
               "RelativeToolTip": "SIDEBAR\\VI\u0160E\\View\\MovieDescription.xaml.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAB+AAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAABsAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-08-29T15:35:54.892Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 4,
               "Title": "MovieDescription.xaml",
               "DocumentMoniker": "C:\\Users\\mvcrt\\Documents\\GitHub\\zavrsniobjektno\\SIDEBAR\\SIDEBAR\\VI\u0160E\\View\\MovieDescription.xaml",
               "RelativeDocumentMoniker": "SIDEBAR\\VI\u0160E\\View\\MovieDescription.xaml",
@@ -213,7 +208,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 15,
               "Title": "Movie.cs",
               "DocumentMoniker": "C:\\Users\\mvcrt\\Documents\\GitHub\\zavrsniobjektno\\SIDEBAR\\SIDEBAR\\VI\u0160E\\View\\Movie.cs",
               "RelativeDocumentMoniker": "SIDEBAR\\VI\u0160E\\View\\Movie.cs",
@@ -221,8 +216,7 @@
               "RelativeToolTip": "SIDEBAR\\VI\u0160E\\View\\Movie.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAnAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-29T14:52:36.026Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-08-29T14:52:36.026Z"
             },
             {
               "$type": "Document",
@@ -234,8 +228,7 @@
               "RelativeToolTip": "SIDEBAR\\VI\u0160E\\View\\MojaLista.xaml.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABwAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-28T14:10:11.351Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-08-28T14:10:11.351Z"
             },
             {
               "$type": "Document",
@@ -246,8 +239,7 @@
               "ToolTip": "C:\\Users\\mvcrt\\Documents\\GitHub\\zavrsniobjektno\\SIDEBAR\\SIDEBAR\\VI\u0160E\\View\\MojaLista.xaml",
               "RelativeToolTip": "SIDEBAR\\VI\u0160E\\View\\MojaLista.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-08-28T14:08:50.83Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-08-28T14:08:50.83Z"
             },
             {
               "$type": "Document",
@@ -263,7 +255,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 7,
               "Title": "FilmoviISerijeViewModel.cs",
               "DocumentMoniker": "C:\\Users\\mvcrt\\Documents\\GitHub\\zavrsniobjektno\\SIDEBAR\\SIDEBAR\\VI\u0160E\\ViewModel\\FilmoviISerijeViewModel.cs",
               "RelativeDocumentMoniker": "SIDEBAR\\VI\u0160E\\ViewModel\\FilmoviISerijeViewModel.cs",
@@ -276,7 +268,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 11,
               "Title": "RelayCommand.cs",
               "DocumentMoniker": "C:\\Users\\mvcrt\\Documents\\GitHub\\zavrsniobjektno\\SIDEBAR\\SIDEBAR\\RelayCommand.cs",
               "RelativeDocumentMoniker": "SIDEBAR\\RelayCommand.cs",
@@ -284,12 +276,11 @@
               "RelativeToolTip": "SIDEBAR\\RelayCommand.cs",
               "ViewState": "AgIAAAIAAAAAAAAAAAAgwCEAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-28T13:15:32.14Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-08-28T13:15:32.14Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 12,
               "Title": "GlavniProzor.xaml.cs",
               "DocumentMoniker": "C:\\Users\\mvcrt\\Documents\\GitHub\\zavrsniobjektno\\SIDEBAR\\SIDEBAR\\VI\u0160E\\View\\GlavniProzor.xaml.cs",
               "RelativeDocumentMoniker": "SIDEBAR\\VI\u0160E\\View\\GlavniProzor.xaml.cs",
@@ -297,8 +288,7 @@
               "RelativeToolTip": "SIDEBAR\\VI\u0160E\\View\\GlavniProzor.xaml.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAB4AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-23T16:38:05.023Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-08-23T16:38:05.023Z"
             },
             {
               "$type": "Document",
@@ -309,12 +299,11 @@
               "ToolTip": "C:\\Users\\mvcrt\\Documents\\GitHub\\zavrsniobjektno\\SIDEBAR\\SIDEBAR\\SIDEBAR.csproj",
               "RelativeToolTip": "SIDEBAR\\SIDEBAR.csproj",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
-              "WhenOpened": "2024-08-12T16:30:21.504Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-08-12T16:30:21.504Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 3,
               "Title": "HomeGumb.xaml",
               "DocumentMoniker": "C:\\Users\\mvcrt\\Documents\\GitHub\\zavrsniobjektno\\SIDEBAR\\SIDEBAR\\Tema\\HomeGumb.xaml",
               "RelativeDocumentMoniker": "SIDEBAR\\Tema\\HomeGumb.xaml",
@@ -326,7 +315,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 14,
               "Title": "App.xaml",
               "DocumentMoniker": "C:\\Users\\mvcrt\\Documents\\GitHub\\zavrsniobjektno\\SIDEBAR\\SIDEBAR\\App.xaml",
               "RelativeDocumentMoniker": "SIDEBAR\\App.xaml",
@@ -338,25 +327,25 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 9,
               "Title": "GlavniProzor.xaml",
               "DocumentMoniker": "C:\\Users\\mvcrt\\Documents\\GitHub\\zavrsniobjektno\\SIDEBAR\\SIDEBAR\\VI\u0160E\\View\\GlavniProzor.xaml",
               "RelativeDocumentMoniker": "SIDEBAR\\VI\u0160E\\View\\GlavniProzor.xaml",
-              "ToolTip": "C:\\Users\\mvcrt\\Documents\\GitHub\\zavrsniobjektno\\SIDEBAR\\SIDEBAR\\VI\u0160E\\View\\GlavniProzor.xaml*",
-              "RelativeToolTip": "SIDEBAR\\VI\u0160E\\View\\GlavniProzor.xaml*",
+              "ToolTip": "C:\\Users\\mvcrt\\Documents\\GitHub\\zavrsniobjektno\\SIDEBAR\\SIDEBAR\\VI\u0160E\\View\\GlavniProzor.xaml",
+              "RelativeToolTip": "SIDEBAR\\VI\u0160E\\View\\GlavniProzor.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
               "WhenOpened": "2024-08-23T15:58:42.605Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "GlavniViewModel.cs",
               "DocumentMoniker": "C:\\Users\\mvcrt\\Documents\\GitHub\\zavrsniobjektno\\SIDEBAR\\SIDEBAR\\VI\u0160E\\ViewModel\\GlavniViewModel.cs",
               "RelativeDocumentMoniker": "SIDEBAR\\VI\u0160E\\ViewModel\\GlavniViewModel.cs",
               "ToolTip": "C:\\Users\\mvcrt\\Documents\\GitHub\\zavrsniobjektno\\SIDEBAR\\SIDEBAR\\VI\u0160E\\ViewModel\\GlavniViewModel.cs",
               "RelativeToolTip": "SIDEBAR\\VI\u0160E\\ViewModel\\GlavniViewModel.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB8AAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAABMAAAAAAAAAAAAgwB8AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-08-23T15:58:42.606Z",
               "EditorCaption": ""
@@ -387,13 +376,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 1,
               "Title": "MainWindow.xaml.cs",
               "DocumentMoniker": "C:\\Users\\mvcrt\\Documents\\GitHub\\zavrsniobjektno\\SIDEBAR\\SIDEBAR\\MainWindow.xaml.cs",
               "RelativeDocumentMoniker": "SIDEBAR\\MainWindow.xaml.cs",
               "ToolTip": "C:\\Users\\mvcrt\\Documents\\GitHub\\zavrsniobjektno\\SIDEBAR\\SIDEBAR\\MainWindow.xaml.cs",
               "RelativeToolTip": "SIDEBAR\\MainWindow.xaml.cs",
-              "ViewState": "AgIAABwAAAAAAAAAAAAgwBkAAAAyAAAAAAAAAA==",
+              "ViewState": "AgIAACcAAAAAAAAAAAAAwEMAAAAwAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-08-23T15:58:42.609Z",
               "EditorCaption": ""
