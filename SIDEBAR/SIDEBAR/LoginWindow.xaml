@@ -1,0 +1,207 @@
+﻿<Window x:Class="SIDEBAR.LoginWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="LoginWindow" Height="500" Width="800"
+        WindowStartupLocation="CenterScreen"
+        WindowStyle="None"
+        AllowsTransparency="True"
+        Background="#272426">
+
+    <Window.Resources>
+        <!-- Styles for TextBlock, Button, TextBox, and PasswordBox -->
+
+        <!-- Style for TextBlocks -->
+        <Style TargetType="TextBlock">
+            <Setter Property="Foreground" Value="#FEB337"/>
+            <!-- Theme Color -->
+            <Setter Property="FontSize" Value="14"/>
+        </Style>
+
+        <!-- Style for Buttons -->
+        <Style TargetType="Button">
+            <Setter Property="Background" Value="#FEB337"/>
+            <!-- Theme Color -->
+            <Setter Property="Foreground" Value="White"/>
+            <Setter Property="FontWeight" Value="Bold"/>
+            <Setter Property="Padding" Value="10,5"/>
+            <Setter Property="Margin" Value="0,5,0,5"/>
+            <Setter Property="BorderBrush" Value="Transparent"/>
+            <Setter Property="BorderThickness" Value="0"/>
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="Button">
+                        <Border Background="{TemplateBinding Background}"
+                                CornerRadius="10">
+                            <!-- Rounded Edges -->
+                            <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                        </Border>
+                        <ControlTemplate.Triggers>
+                            <Trigger Property="IsMouseOver" Value="True">
+                                <Setter Property="Background" Value="#f8a727"/>
+                                <!-- Lighter Theme Color on Hover -->
+                            </Trigger>
+                            <Trigger Property="IsPressed" Value="True">
+                                <Setter Property="Background" Value="#d49331"/>
+                                <!-- Darker Theme Color on Click -->
+                            </Trigger>
+                        </ControlTemplate.Triggers>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+
+        <!-- Style for TextBoxes -->
+        <Style TargetType="TextBox">
+            <Setter Property="Foreground" Value="Black"/>
+            <Setter Property="Padding" Value="10"/>
+            <Setter Property="BorderThickness" Value="2"/>
+            <Setter Property="BorderBrush" Value="#acb0af"/>
+            <Setter Property="Background" Value="White"/>
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="TextBox">
+                        <Border CornerRadius="5" 
+                                BorderBrush="{TemplateBinding BorderBrush}" 
+                                BorderThickness="{TemplateBinding BorderThickness}" 
+                                Background="{TemplateBinding Background}">
+                            <Grid>
+                                <ScrollViewer Margin="0" x:Name="PART_ContentHost"/>
+                            </Grid>
+                        </Border>
+                        <ControlTemplate.Triggers>
+                            <Trigger Property="IsFocused" Value="True">
+                                <Setter Property="BorderBrush" Value="#FEB337"/>
+                                <!-- Highlight Color on Focus -->
+                            </Trigger>
+                        </ControlTemplate.Triggers>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+
+        <!-- Style for PasswordBoxes -->
+        <Style TargetType="PasswordBox">
+            <Setter Property="Foreground" Value="Black"/>
+            <Setter Property="Padding" Value="10"/>
+            <Setter Property="BorderThickness" Value="2"/>
+            <Setter Property="BorderBrush" Value="#acb0af"/>
+            <Setter Property="Background" Value="White"/>
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="PasswordBox">
+                        <Border CornerRadius="5" 
+                                BorderBrush="{TemplateBinding BorderBrush}" 
+                                BorderThickness="{TemplateBinding BorderThickness}" 
+                                Background="{TemplateBinding Background}">
+                            <Grid>
+                                <ScrollViewer Margin="0" x:Name="PART_ContentHost"/>
+                            </Grid>
+                        </Border>
+                        <ControlTemplate.Triggers>
+                            <Trigger Property="IsFocused" Value="True">
+                                <Setter Property="BorderBrush" Value="#FEB337"/>
+                                <!-- Highlight Color on Focus -->
+                            </Trigger>
+                        </ControlTemplate.Triggers>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+    </Window.Resources>
+
+    <Grid>
+        <!-- Top Bar with Minimize and Close Buttons -->
+        <DockPanel LastChildFill="True" Background="#272426" >
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Right" DockPanel.Dock="Top">
+                <!-- Minimize Button -->
+                <Button Width="30" Height="30" Background="Transparent" BorderBrush="Transparent" Click="Minimize_Click">
+                    <Path Data="M 0,0 L 10,0" Stroke="White" StrokeThickness="2" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                </Button>
+
+                <!-- Close Button -->
+                <Button Width="30" Height="30" Background="Transparent" BorderBrush="Transparent" Click="Close_Click">
+                    <Path Data="M 0,0 L 10,10 M 0,10 L 10,0" Stroke="White" StrokeThickness="2" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                </Button>
+            </StackPanel>
+
+            <!-- Main Content -->
+            <Grid Margin="0,40,0,0">
+                <!-- Margin adjusted to leave space for the top bar -->
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="1*"/>
+                    <ColumnDefinition Width="2*"/>
+                </Grid.ColumnDefinitions>
+
+                <!-- Left Side (for Registration) -->
+                <Border CornerRadius="10 0 0 10" Grid.ColumnSpan="2" Margin="0,-80,533,0">
+                    <Border.Background>
+                        <LinearGradientBrush StartPoint="0,0" EndPoint="1,1">
+                            <GradientStop Color="#FEB337" Offset="0"/>
+                            <GradientStop Color="#FEB337" Offset="1"/>
+                        </LinearGradientBrush>
+                    </Border.Background>
+
+                    <Grid>
+                        <Canvas>
+                            <Polygon Points="0,20 230,140 0,270" Fill="#EE8232"/>
+                            <Polygon Points="100,400 200,370 180,470" Fill="#EE8232"/>
+                        </Canvas>
+
+                        <StackPanel VerticalAlignment="Center" HorizontalAlignment="Center">
+                            <TextBlock Text="Registrirajte se" FontSize="24" FontWeight="Bold" Foreground="White"/>
+                            <TextBlock Text="Kreirajte novi račun" Margin="0,10,0,20" Foreground="White"/>
+
+                            <Button Content="Registracija" Click="RegisterButton_Click" Width="120" 
+                                    Background="Transparent" 
+                                    Foreground="White"
+                                    FontWeight="Bold"
+                                    BorderBrush="White"
+                                    BorderThickness="2"
+                                    Margin="0,5,0,5">
+                                <Button.Template>
+                                    <ControlTemplate TargetType="Button">
+                                        <Border CornerRadius="10" BorderBrush="{TemplateBinding BorderBrush}" BorderThickness="{TemplateBinding BorderThickness}">
+                                            <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                                        </Border>
+                                        <ControlTemplate.Triggers>
+                                            <Trigger Property="IsMouseOver" Value="True">
+                                                <Setter Property="Background" Value="White"/>
+                                                <Setter Property="Foreground" Value="#FEB337"/>
+                                            </Trigger>
+                                            <Trigger Property="IsPressed" Value="True">
+                                                <Setter Property="Background" Value="#d49331"/>
+                                                <Setter Property="Foreground" Value="White"/>
+                                            </Trigger>
+                                        </ControlTemplate.Triggers>
+                                    </ControlTemplate>
+                                </Button.Template>
+                            </Button>
+                        </StackPanel>
+                    </Grid>
+                </Border>
+
+                <!-- Right Side (for Login) -->
+                <Border Background="#272426" Grid.Column="1" CornerRadius="5" Margin="0,-50,0,0">
+                    <StackPanel VerticalAlignment="Center" HorizontalAlignment="Center" Margin="20">
+                        <TextBlock Text="Prijavite se" FontSize="24" FontWeight="Bold" Foreground="White"/>
+                        <TextBlock Text="Prijavite se koristeći svoj e-mail" Margin="0 10 0 15" Foreground="White"/>
+
+                        <!-- Email Label and TextBox -->
+                        <StackPanel Orientation="Horizontal" Margin="24 5 0 10">
+                            <TextBlock Text="Email:" VerticalAlignment="Center" Foreground="White" Margin="0 0 10 0"/>
+                            <TextBox x:Name="txtEmail" Width="200"/>
+                        </StackPanel>
+
+                        <!-- Password Label and PasswordBox -->
+                        <StackPanel Orientation="Horizontal" Margin="0 5 0 20">
+                            <TextBlock Text="Password:" VerticalAlignment="Center" Foreground="White" Margin="0 0 10 0"/>
+                            <PasswordBox x:Name="txtPassword" Width="200"/>
+                        </StackPanel>
+
+                        <Button Content="Login" Click="LoginButton_Click" Width="120"/>
+                    </StackPanel>
+                </Border>
+            </Grid>
+        </DockPanel>
+    </Grid>
+</Window>

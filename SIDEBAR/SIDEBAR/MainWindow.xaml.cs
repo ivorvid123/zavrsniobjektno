@@ -45,7 +45,7 @@ namespace SIDEBAR
             }
         }
 
-        private void Close_Click(object sender, RoutedEventArgs e)
+        public void Close_Click(object sender, RoutedEventArgs e)
         {
             this.Close();
         }
