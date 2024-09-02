@@ -29,36 +29,77 @@
                        Foreground="LightGray"
                        Height="415"
                        VerticalAlignment="Top"/>
-
+            
             <Button Content="Save Movie"
-                    FontWeight="SemiBold"
-                    Height="48"
-                    Background="Green"
-                    Foreground="White"
-                    FontSize="20"
-                    Click="SaveMovie_Click"
-                    Width="150"
-                    Margin="363,416,287,37"/>
+FontWeight="SemiBold"
+Height="48"
+Background="Green"
+Foreground="White"
+FontSize="20"
+Click="SaveMovie_Click"
+Width="150"
+Margin="400,416,250,37">
+                <Button.Template>
+                    <ControlTemplate TargetType="Button">
+                        <Border Background="{TemplateBinding Background}"
+            BorderBrush="{TemplateBinding BorderBrush}"
+            BorderThickness="{TemplateBinding BorderThickness}"
+            CornerRadius="24">
+                            <ContentPresenter HorizontalAlignment="Center"
+                          VerticalAlignment="Center"
+                          RecognizesAccessKey="True"/>
+                        </Border>
+                    </ControlTemplate>
+                </Button.Template>
+            </Button>
 
-            <Button Content="Remove Movie"
-                    FontWeight="SemiBold"
-                    Height="48"
-                    Background="Red"
-                    Foreground="White"
-                    FontSize="20"
-                    Click="RemoveMovie_Click"
-                    Width="150"
-                    Margin="558,416,92,37"/>
+
 
             <Button Content="Nazad"
-                    FontWeight="SemiBold"
-                    Height="48"
-                    Background="Orange"
-                    Foreground="Black"
-                    FontSize="20"
-                    Click="Back_Click"
-                    Width="150"
-                    Margin="56,416,594,37"/>
+        FontWeight="SemiBold"
+        Height="48"
+        Background="Orange"
+        Foreground="Black"
+        FontSize="20"
+        Click="Back_Click"
+        Width="150"
+        Margin="44,416,606,37">
+                <Button.Template>
+                    <ControlTemplate TargetType="Button">
+                        <Border Background="{TemplateBinding Background}"
+                    BorderBrush="{TemplateBinding BorderBrush}"
+                    BorderThickness="{TemplateBinding BorderThickness}"
+                    CornerRadius="24">
+                            <ContentPresenter HorizontalAlignment="Center"
+                                  VerticalAlignment="Center"
+                                  RecognizesAccessKey="True"/>
+                        </Border>
+                    </ControlTemplate>
+                </Button.Template>
+            </Button>
+
+            <Button Content="Remove Movie"
+        FontWeight="SemiBold"
+        Height="48"
+        Background="Red"
+        Foreground="White"
+        FontSize="20"
+        Click="RemoveMovie_Click"
+        Width="150"
+        Margin="581,416,69,37">
+                <Button.Template>
+                    <ControlTemplate TargetType="Button">
+                        <Border Background="{TemplateBinding Background}"
+                    BorderBrush="{TemplateBinding BorderBrush}"
+                    BorderThickness="{TemplateBinding BorderThickness}"
+                    CornerRadius="24">
+                            <ContentPresenter HorizontalAlignment="Center"
+                                  VerticalAlignment="Center"
+                                  RecognizesAccessKey="True"/>
+                        </Border>
+                    </ControlTemplate>
+                </Button.Template>
+            </Button>
         </Grid>
     </Viewbox>
 </UserControl>
