@@ -21,8 +21,18 @@
                         <ImageBrush ImageSource="/SLIKE/avatar.jpg" />
                     </Border.Background>
                 </Border>
-                <Border Width="456" Height="200" Background="Orange" CornerRadius="40">
-                    <TextBlock 
+                <Border Width="456" Height="290" Background="Orange" CornerRadius="40">
+                    <StackPanel>
+                        <!-- Label for email -->
+                        <TextBlock Text="EMAIL:"
+                                   Foreground="Black"
+                                   FontSize="24"
+                                   FontWeight="Bold"
+                                   Margin="10"
+                                   HorizontalAlignment="Center"/>
+
+                        <!-- Email text block -->
+                        <TextBlock 
                              Text="{Binding UserEmail}" 
                              Background="Transparent"
                              FontWeight="Bold"
@@ -34,16 +44,27 @@
                              FontSize="40"
                              HorizontalAlignment="Center"
                              Width="456"/>
+
+                        <!-- Label for registration date -->
+                        <TextBlock Text="ČLAN OD:"
+                                   Foreground="Black"
+                                   FontSize="24"
+                                   FontWeight="Bold"
+                                   Margin="10"
+                                   HorizontalAlignment="Center"/>
+
+                        <!-- Registration date text block -->
+                        <TextBlock
+                             Text="{Binding UserDate}"
+                             Foreground="Black"
+                             FontSize="24"
+                             FontWeight="Regular"
+                             Margin="10"
+                             HorizontalAlignment="Center"/>
+                    </StackPanel>
                 </Border>
             </StackPanel>
 
-            <!-- Display registration date -->
-            <TextBlock
-                       Text="{Binding UserDate}"
-                       Foreground="White"
-                       FontSize="20"
-                       FontWeight="Regular"
-                       Margin="10"/>
             <Button Content="Odjava"
                     FontWeight="SemiBold"
                     Height="48"
@@ -52,8 +73,20 @@
                     FontSize="20"
                     Click="Close_Click"
                     Width="150"
-                    Margin="500,100,0,0"
-                    />
+                    Margin="500,10,0,0">
+                <Button.Template>
+                    <ControlTemplate TargetType="Button">
+                        <Border Background="{TemplateBinding Background}"
+                                BorderBrush="{TemplateBinding BorderBrush}"
+                                BorderThickness="{TemplateBinding BorderThickness}"
+                                CornerRadius="24">
+                            <ContentPresenter HorizontalAlignment="Center"
+                                              VerticalAlignment="Center"
+                                              RecognizesAccessKey="True"/>
+                        </Border>
+                    </ControlTemplate>
+                </Button.Template>
+            </Button>
         </StackPanel>
     </Viewbox>
 </UserControl>
