@@ -108,100 +108,133 @@
             </Setter>
         </Style>
     </Window.Resources>
+    <Border CornerRadius="20">
+        <Grid>
+            <!-- Top Bar with Minimize and Close Buttons -->
+            <DockPanel LastChildFill="True" Background="#272426" MouseLeftButtonDown="TitleBar_MouseLeftButtonDown" >
+                <StackPanel Orientation="Horizontal" HorizontalAlignment="Right" DockPanel.Dock="Top">
+                    <!-- Minimize Button -->
+                    <Button Width="30" Height="30" Background="Transparent" BorderBrush="Transparent" Click="Minimize_Click">
+                        <Path Data="M 0,0 L 10,0" Stroke="White" StrokeThickness="2" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                    </Button>
 
-    <Grid>
-        <!-- Top Bar with Minimize and Close Buttons -->
-        <DockPanel LastChildFill="True" Background="#272426" >
-            <StackPanel Orientation="Horizontal" HorizontalAlignment="Right" DockPanel.Dock="Top">
-                <!-- Minimize Button -->
-                <Button Width="30" Height="30" Background="Transparent" BorderBrush="Transparent" Click="Minimize_Click">
-                    <Path Data="M 0,0 L 10,0" Stroke="White" StrokeThickness="2" HorizontalAlignment="Center" VerticalAlignment="Center"/>
-                </Button>
+                    <!-- Close Button -->
+                    <Button Width="30" Height="30" Background="Transparent" BorderBrush="Transparent" Click="Close_Click">
+                        <Path Data="M 0,0 L 10,10 M 0,10 L 10,0" Stroke="White" StrokeThickness="2" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                    </Button>
+                </StackPanel>
 
-                <!-- Close Button -->
-                <Button Width="30" Height="30" Background="Transparent" BorderBrush="Transparent" Click="Close_Click">
-                    <Path Data="M 0,0 L 10,10 M 0,10 L 10,0" Stroke="White" StrokeThickness="2" HorizontalAlignment="Center" VerticalAlignment="Center"/>
-                </Button>
-            </StackPanel>
+                <!-- Main Content -->
+                <Grid Margin="0,40,0,0">
+                    <!-- Margin adjusted to leave space for the top bar -->
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="1*"/>
+                        <ColumnDefinition Width="2*"/>
+                    </Grid.ColumnDefinitions>
 
-            <!-- Main Content -->
-            <Grid Margin="0,40,0,0">
-                <!-- Margin adjusted to leave space for the top bar -->
-                <Grid.ColumnDefinitions>
-                    <ColumnDefinition Width="1*"/>
-                    <ColumnDefinition Width="2*"/>
-                </Grid.ColumnDefinitions>
+                    <!-- Left Side (for Registration) -->
+                    <Border CornerRadius="10 0 0 10" Grid.ColumnSpan="2" Margin="0,-80,533,0">
+                        <Border.Background>
+                            <LinearGradientBrush StartPoint="0,0" EndPoint="1,1">
+                                <GradientStop Color="#FEB337" Offset="0"/>
+                                <GradientStop Color="#FEB337" Offset="1"/>
+                            </LinearGradientBrush>
+                        </Border.Background>
 
-                <!-- Left Side (for Registration) -->
-                <Border CornerRadius="10 0 0 10" Grid.ColumnSpan="2" Margin="0,-80,533,0">
-                    <Border.Background>
-                        <LinearGradientBrush StartPoint="0,0" EndPoint="1,1">
-                            <GradientStop Color="#FEB337" Offset="0"/>
-                            <GradientStop Color="#FEB337" Offset="1"/>
-                        </LinearGradientBrush>
-                    </Border.Background>
+                        <Grid>
+                            <Canvas>
+                                <Polygon Points="0,20 230,140 0,270" Fill="#EE8232"/>
+                                <Polygon Points="100,400 200,370 180,470" Fill="#EE8232"/>
+                            </Canvas>
 
-                    <Grid>
-                        <Canvas>
-                            <Polygon Points="0,20 230,140 0,270" Fill="#EE8232"/>
-                            <Polygon Points="100,400 200,370 180,470" Fill="#EE8232"/>
-                        </Canvas>
+                            <StackPanel VerticalAlignment="Center" HorizontalAlignment="Center">
+                                <TextBlock Text="Registrirajte se" FontSize="24" FontWeight="Bold" Foreground="White"/>
+                                <TextBlock Text="Kreirajte novi račun" Margin="0,10,0,20" Foreground="White"/>
 
-                        <StackPanel VerticalAlignment="Center" HorizontalAlignment="Center">
-                            <TextBlock Text="Registrirajte se" FontSize="24" FontWeight="Bold" Foreground="White"/>
-                            <TextBlock Text="Kreirajte novi račun" Margin="0,10,0,20" Foreground="White"/>
-
-                            <Button Content="Registracija" Click="RegisterButton_Click" Width="120" 
+                                <Button Content="Registracija" Click="RegisterButton_Click" Width="120" 
                                     Background="Transparent" 
                                     Foreground="White"
                                     FontWeight="Bold"
                                     BorderBrush="White"
                                     BorderThickness="2"
                                     Margin="0,5,0,5">
-                                <Button.Template>
-                                    <ControlTemplate TargetType="Button">
-                                        <Border CornerRadius="10" BorderBrush="{TemplateBinding BorderBrush}" BorderThickness="{TemplateBinding BorderThickness}">
-                                            <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
-                                        </Border>
-                                        <ControlTemplate.Triggers>
-                                            <Trigger Property="IsMouseOver" Value="True">
-                                                <Setter Property="Background" Value="White"/>
-                                                <Setter Property="Foreground" Value="#FEB337"/>
-                                            </Trigger>
-                                            <Trigger Property="IsPressed" Value="True">
-                                                <Setter Property="Background" Value="#d49331"/>
-                                                <Setter Property="Foreground" Value="White"/>
-                                            </Trigger>
-                                        </ControlTemplate.Triggers>
-                                    </ControlTemplate>
-                                </Button.Template>
-                            </Button>
+                                    <Button.Template>
+                                        <ControlTemplate TargetType="Button">
+                                            <Border CornerRadius="10" BorderBrush="{TemplateBinding BorderBrush}" BorderThickness="{TemplateBinding BorderThickness}">
+                                                <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                                            </Border>
+                                            <ControlTemplate.Triggers>
+                                                <Trigger Property="IsMouseOver" Value="True">
+                                                    <Setter Property="Background" Value="White"/>
+                                                    <Setter Property="Foreground" Value="#FEB337"/>
+                                                </Trigger>
+                                                <Trigger Property="IsPressed" Value="True">
+                                                    <Setter Property="Background" Value="#d49331"/>
+                                                    <Setter Property="Foreground" Value="White"/>
+                                                </Trigger>
+                                            </ControlTemplate.Triggers>
+                                        </ControlTemplate>
+                                    </Button.Template>
+                                </Button>
+                            </StackPanel>
+                        </Grid>
+                    </Border>
+
+                    <!-- Right Side (for Login) -->
+                    <Border Background="#272426" Grid.Column="1" CornerRadius="20" Margin="0,-50,0,0">
+                        <StackPanel VerticalAlignment="Center" HorizontalAlignment="Center" Width="301">
+                            <Canvas>
+                                <Polygon Points="0,20 230,140 0,270" Fill="Gray" Canvas.Left="117" Canvas.Top="-175" RenderTransformOrigin="0.5,0.5" HorizontalAlignment="Left" VerticalAlignment="Center">
+                                    <Polygon.RenderTransform>
+                                        <TransformGroup>
+                                            <ScaleTransform/>
+                                            <SkewTransform/>
+                                            <RotateTransform Angle="90"/>
+                                            <TranslateTransform/>
+                                        </TransformGroup>
+                                    </Polygon.RenderTransform>
+                                </Polygon>
+                                <Polygon Points="15,400 200,370 180,470" Fill="Gray" Canvas.Left="129" Canvas.Top="-49" RenderTransformOrigin="0.5,0.5" HorizontalAlignment="Left" VerticalAlignment="Center" Height="572" Width="258">
+                                    <Polygon.RenderTransform>
+                                        <TransformGroup>
+                                            <ScaleTransform/>
+                                            <SkewTransform/>
+                                            <RotateTransform Angle="-39.874"/>
+                                            <TranslateTransform/>
+                                        </TransformGroup>
+                                    </Polygon.RenderTransform>
+                                </Polygon>
+                                <Polygon Points="100,400 200,370 180,470" Fill="Gray" Canvas.Left="-185" Canvas.Top="-360" RenderTransformOrigin="0.5,0.5" HorizontalAlignment="Left" VerticalAlignment="Top">
+                                    <Polygon.RenderTransform>
+                                        <TransformGroup>
+                                            <ScaleTransform/>
+                                            <SkewTransform/>
+                                            <RotateTransform Angle="-15.934"/>
+                                            <TranslateTransform/>
+                                        </TransformGroup>
+                                    </Polygon.RenderTransform>
+                                </Polygon>
+                            </Canvas>
+                            <TextBlock Text="Prijavite se" FontSize="24" FontWeight="Bold" Foreground="White"/>
+                            <TextBlock Text="Prijavite se koristeći svoj e-mail" Margin="0 10 0 15" Foreground="White"/>
+
+                            <!-- Email Label and TextBox -->
+                            <StackPanel Orientation="Horizontal" Margin="24 5 0 10">
+                                <TextBlock Text="Email:" VerticalAlignment="Center" Foreground="White" Margin="0 0 10 0"/>
+                                <TextBox x:Name="txtEmail" Width="200"/>
+                            </StackPanel>
+
+                            <!-- Password Label and PasswordBox -->
+                            <StackPanel Orientation="Horizontal" Margin="0 5 0 20">
+                                <TextBlock Text="Password:" VerticalAlignment="Center" Foreground="White" Margin="0 0 10 0"/>
+                                <PasswordBox x:Name="txtPassword" Width="200"/>
+                            </StackPanel>
+
+                            <Button Content="Login" Click="LoginButton_Click" Width="120"/>
                         </StackPanel>
-                    </Grid>
-                </Border>
-
-                <!-- Right Side (for Login) -->
-                <Border Background="#272426" Grid.Column="1" CornerRadius="5" Margin="0,-50,0,0">
-                    <StackPanel VerticalAlignment="Center" HorizontalAlignment="Center" Margin="20">
-                        <TextBlock Text="Prijavite se" FontSize="24" FontWeight="Bold" Foreground="White"/>
-                        <TextBlock Text="Prijavite se koristeći svoj e-mail" Margin="0 10 0 15" Foreground="White"/>
-
-                        <!-- Email Label and TextBox -->
-                        <StackPanel Orientation="Horizontal" Margin="24 5 0 10">
-                            <TextBlock Text="Email:" VerticalAlignment="Center" Foreground="White" Margin="0 0 10 0"/>
-                            <TextBox x:Name="txtEmail" Width="200"/>
-                        </StackPanel>
-
-                        <!-- Password Label and PasswordBox -->
-                        <StackPanel Orientation="Horizontal" Margin="0 5 0 20">
-                            <TextBlock Text="Password:" VerticalAlignment="Center" Foreground="White" Margin="0 0 10 0"/>
-                            <PasswordBox x:Name="txtPassword" Width="200"/>
-                        </StackPanel>
-
-                        <Button Content="Login" Click="LoginButton_Click" Width="120"/>
-                    </StackPanel>
-                </Border>
-            </Grid>
-        </DockPanel>
-    </Grid>
+                    </Border>
+                </Grid>
+            </DockPanel>
+        </Grid>
+    </Border>
 </Window>

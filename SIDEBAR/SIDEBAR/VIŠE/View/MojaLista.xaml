@@ -4,11 +4,51 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:local="clr-namespace:SIDEBAR.VIŠE.View"
-             mc:Ignorable="d" 
-             d:DesignHeight="450" d:DesignWidth="800">
+             mc:Ignorable="d" d:DesignWidth="800" Height="501">
     <Grid>
-        <TextBlock Text="OVO JE DIO ZA LISTU"
-                   Background="Azure"
-                   FontSize="78"></TextBlock>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="50"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="170"/>
+            <ColumnDefinition Width="391*"/>
+            <ColumnDefinition Width="239*"/>
+        </Grid.ColumnDefinitions>
+        <Grid Grid.RowSpan="2">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="56*"/>
+                <RowDefinition Height="111*"/>
+            </Grid.RowDefinitions>
+        </Grid>
+        <ScrollViewer Background="#272426" Grid.ColumnSpan="3" Grid.RowSpan="2">
+            <StackPanel>
+                <TextBlock Margin="10" FontSize="22" FontWeight="Medium">   <Run Language="en-gb" Text="Moja Lista" Foreground="White"/></TextBlock>
+                <StackPanel Margin="20 0">
+                    <ItemsControl x:Name="ListViewMovie" ItemsSource="{Binding Movie}">
+                        <ItemsControl.ItemTemplate>
+                            <DataTemplate>
+                                <Border Margin="10" Width="150" Height="200">
+                                    <StackPanel>
+                                        <Button Width="150" Height="200"  Foreground="Black" >
+                                            <Button.Background>
+                                                <ImageBrush ImageSource="{Binding Image}"></ImageBrush>
+                                            </Button.Background>
+                                        </Button>
+                                        <TextBlock Foreground="White" Margin="5" Text="{Binding Ocjena, StringFormat=Ocjena: {0}}" FontSize="17" FontFamily="Franklin Gothic Medium"/>
+                                        <TextBlock Foreground="White"  Margin="5 0" Text="{Binding Ime}" FontSize="15"/>
+                                    </StackPanel>
+                                </Border>
+                            </DataTemplate>
+                        </ItemsControl.ItemTemplate>
+                        <ItemsControl.ItemsPanel>
+                            <ItemsPanelTemplate>
+                                <WrapPanel/>
+                            </ItemsPanelTemplate>
+                        </ItemsControl.ItemsPanel>
+                    </ItemsControl>
+                </StackPanel>
+            </StackPanel>
+        </ScrollViewer>
     </Grid>
 </UserControl>

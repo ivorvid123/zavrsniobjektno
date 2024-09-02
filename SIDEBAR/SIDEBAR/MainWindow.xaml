@@ -10,7 +10,9 @@
         WindowStyle="None"
         ResizeMode="NoResize"
         Background="Transparent"
-        AllowsTransparency="True">
+        AllowsTransparency="True"
+        
+        >
 
     <Window.DataContext>
         <ViewModel:GlavniViewModel/>
@@ -22,21 +24,21 @@
 
 
             <Grid.ColumnDefinitions>
-                <ColumnDefinition Width="200"/>
-                <ColumnDefinition/>
+                <ColumnDefinition Width="Auto"/>
+                <ColumnDefinition Width="*"/>
             </Grid.ColumnDefinitions>
 
             <Grid.RowDefinitions>
-                <RowDefinition Height="30"/>
-                <!-- Custom Title Bar Height -->
-                <RowDefinition Height="45"/>
-                <!-- Height for Title and Buttons -->
-                <RowDefinition Height="107*"/>
-                <RowDefinition Height="418*"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto" MinHeight="44"/>
+                <RowDefinition Height="130*"/>
+                <RowDefinition Height="133*"/>
             </Grid.RowDefinitions>
 
+
+
             <!-- Custom Title Bar -->
-            <Grid Grid.ColumnSpan="2" Background="#2E2C2F" Height="30" MouseLeftButtonDown="TitleBar_MouseLeftButtonDown">
+            <Grid Grid.ColumnSpan="2" Background="#2E2C2F" MouseLeftButtonDown="TitleBar_MouseLeftButtonDown">
                 <TextBlock Text="FilmoSkop"
                            VerticalAlignment="Center"
                            HorizontalAlignment="Left"
@@ -48,6 +50,9 @@
                     <!-- Minimize Button -->
                     <Button Width="30" Height="30" Background="Transparent" BorderBrush="Transparent" Click="Minimize_Click">
                         <Path Data="M 0,0 L 10,0" Stroke="White" StrokeThickness="2" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                    </Button>
+                    <Button Width="30" Height="30" Background="Transparent" BorderBrush="Transparent" Click="MaximizeRestore_Click">
+                        <Path Data="M 0,0 L 10,0 L 10,10 L 0,10 Z" Stroke="White" StrokeThickness="2" HorizontalAlignment="Center" VerticalAlignment="Center"/>
                     </Button>
 
                     <!-- Close Button -->
@@ -63,35 +68,32 @@
             <StackPanel Grid.Row="2" Grid.RowSpan="2">
                 <RadioButton Content="Home"
                              FontWeight="SemiBold"
-                             Height="50"
                              Foreground="White"
                              FontSize="14"
                              Style="{StaticResource HomeGumb}"
-                             Click="HomeButton_Click"/>
+                             Click="HomeButton_Click" Height="51"/>
 
                 <RadioButton Content="Filmovi i Serije"
                              FontWeight="SemiBold"
                              Foreground="White"
-                             Height="50"
                              FontSize="14"
                              Style="{StaticResource HomeGumb}"
-                             Click="FilmoviISerijeButton_Click" Width="200"/>
+                             Click="FilmoviISerijeButton_Click" Width="200" Height="51"/>
 
                 <RadioButton Content="Moja Lista"
                              FontWeight="SemiBold"
                              Foreground="White"
-                             Height="50"
+
                              FontSize="14"
                              Style="{StaticResource HomeGumb}"
-                             Click="MojaListaButton_Click" Width="200"/>
+                             Click="MojaListaButton_Click" Width="200" Height="50"/>
 
                 <RadioButton Content="Account"
                              FontWeight="SemiBold"
                              Foreground="White"
-                             Height="50"
                              FontSize="14"
                              Style="{StaticResource HomeGumb}"
-                             Click="AccountButton_Click" Width="200"/>
+                             Click="AccountButton_Click" Width="200" Height="51"/>
             </StackPanel>
 
             <Border  Background="Orange" Grid.Row="1" BorderBrush="#272426" BorderThickness="5">
