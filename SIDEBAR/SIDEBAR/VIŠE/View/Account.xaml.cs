@@ -1,35 +1,48 @@
 ﻿using System;
+using System.ComponentModel;
 using System.Windows;
 using System.Windows.Controls;
 using MySql.Data.MySqlClient;
 
 namespace SIDEBAR.VIŠE.View
 {
-    public partial class Account : UserControl
+    public partial class Account : UserControl, INotifyPropertyChanged
     {
         // Connection string for MySQL database
         private const string ConnectionString = "Server=localhost;Database=userdatabase;uid=root;Password=ADGe96zn;";
 
+        private User _currentUser;
         public User CurrentUser
         {
-            get { return (User)GetValue(CurrentUserProperty); }
-            set { SetValue(CurrentUserProperty, value); }
+            get { return _currentUser; }
+            set
+            {
+                _currentUser = value;
+                OnPropertyChanged("CurrentUser");
+                OnPropertyChanged("UserEmail");
+                OnPropertyChanged("UserDate");
+            }
         }
-
-        public static readonly DependencyProperty CurrentUserProperty =
-            DependencyProperty.Register("CurrentUser", typeof(User), typeof(Account), new PropertyMetadata(null));
 
         public Account()
         {
             InitializeComponent();
             DataContext = this; // Set DataContext to this UserControl
-            LoadUserData();
+            LoadUserData(); // Load the user data when the control is initialized
         }
 
         private void LoadUserData()
         {
-            // Replace 'your_user_id' with the actual user ID or email to retrieve the specific user's data
-            string query = "SELECT Email, Registration_Date FROM Users WHERE id = @UserId";
+            // Retrieve the user ID from SessionManager
+            int userId = SessionManager.LoggedInUserId;
+
+            if (userId == 0)
+            {
+                MessageBox.Show("User ID not found. Please log in again.");
+                return;
+            }
+
+            string query = "SELECT Email, Registration_Date FROM users WHERE id = @UserId";
 
             using (var connection = new MySqlConnection(ConnectionString))
             {
@@ -38,8 +51,8 @@ namespace SIDEBAR.VIŠE.View
                     connection.Open();
                     using (var command = new MySqlCommand(query, connection))
                     {
-                        // Example parameter; replace with actual user ID or criteria
-                        command.Parameters.AddWithValue("@UserId", "some_user_id");
+                        // Use the user ID stored in SessionManager
+                        command.Parameters.AddWithValue("@UserId", userId);
 
                         using (var reader = command.ExecuteReader())
                         {
@@ -50,6 +63,10 @@ namespace SIDEBAR.VIŠE.View
                                     Email = reader["Email"].ToString(),
                                     RegistrationDate = Convert.ToDateTime(reader["Registration_Date"])
                                 };
+                            }
+                            else
+                            {
+                                MessageBox.Show("No user data found for the given ID.");
                             }
                         }
                     }
@@ -70,22 +87,22 @@ namespace SIDEBAR.VIŠE.View
             }
         }
 
-        // Ensure the User class is implemented correctly for binding
+        // User class for data binding
         public class User
         {
             public string Email { get; set; }
             public DateTime RegistrationDate { get; set; }
         }
 
-        // Ensure these properties are correctly defined for binding
-        public string UserEmail
-        {
-            get { return CurrentUser?.Email; }
-        }
+        public string UserEmail => CurrentUser?.Email;
 
-        public string UserDate
+        public string UserDate => CurrentUser?.RegistrationDate.ToString("yyyy-MM-dd");
+
+        // INotifyPropertyChanged implementation to notify the UI about property changes
+        public event PropertyChangedEventHandler PropertyChanged;
+        protected virtual void OnPropertyChanged(string propertyName)
         {
-            get { return CurrentUser?.RegistrationDate.ToString("yyyy-MM-dd"); }
+            PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
         }
     }
 }

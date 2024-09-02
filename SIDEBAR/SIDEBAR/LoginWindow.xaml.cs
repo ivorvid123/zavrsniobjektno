@@ -3,7 +3,6 @@ using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Input;
 using MySql.Data.MySqlClient;
-using SIDEBAR;
 
 namespace SIDEBAR
 {
@@ -26,15 +25,21 @@ namespace SIDEBAR
                 try
                 {
                     conn.Open();
-                    string query = "SELECT COUNT(*) FROM users WHERE email = @Email AND password = @Password";
+                    // Updated query to retrieve the user's ID
+                    string query = "SELECT id FROM users WHERE email = @Email AND password = @Password";
                     MySqlCommand cmd = new MySqlCommand(query, conn);
                     cmd.Parameters.AddWithValue("@Email", email);
-                    cmd.Parameters.AddWithValue("@Password", password);
+                    cmd.Parameters.AddWithValue("@Password", password);  // Ensure passwords are hashed in production
 
-                    int result = Convert.ToInt32(cmd.ExecuteScalar());
+                    object result = cmd.ExecuteScalar();
 
-                    if (result > 0)
+                    if (result != null)
                     {
+                        // Store the user ID upon successful login
+                        SessionManager.LoggedInUserId = Convert.ToInt32(result);
+
+                        MessageBox.Show($"User ID Set: {SessionManager.LoggedInUserId}");
+                        // Open the main window and close the login window
                         MainWindow mainWindow = new MainWindow();
                         mainWindow.Show();
                         this.Close();
@@ -88,5 +93,11 @@ namespace SIDEBAR
                 this.DragMove();
             }
         }
+    }
+
+    // Static class to store session information
+    public static class SessionManager
+    {
+        public static int LoggedInUserId { get; set; }
     }
 }
