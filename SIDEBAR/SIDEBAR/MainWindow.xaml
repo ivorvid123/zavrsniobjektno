@@ -20,7 +20,7 @@
 
     <Border Background="#272426"
             CornerRadius = "20">
-        <Grid>
+        <Grid >
 
 
             <Grid.ColumnDefinitions>
@@ -99,11 +99,11 @@
             <Border  Background="Orange" Grid.Row="1" BorderBrush="#272426" BorderThickness="5">
                 <TextBlock Text="Pozdrav!" HorizontalAlignment="Center" VerticalAlignment="Center" FontWeight="SemiBold" FontSize="15"></TextBlock>
             </Border>
-            <ContentControl Grid.Row="2"
-                            Grid.Column="1"
-                            Margin="10,10,0,0"
-                            Grid.RowSpan="2"
+            <Grid Grid.Column="1" Margin="5,10,0,10" Grid.Row="2" Grid.RowSpan="2" x:Name="MainGrid">
+                <ContentControl
+                            Margin="0,0,10,10"
                             x:Name="MainContent" />
+            </Grid>
 
         </Grid>
     </Border>
