@@ -19,8 +19,8 @@ namespace SIDEBAR
 
         private void RegisterButton_Click(object sender, RoutedEventArgs e)
         {
-            string username = "UsernameTextBox.Text";
-            string password = "PasswordBox.Password";
+            string username = txtEmail.Text;
+            string password = txtPassword.Password;
 
             if (string.IsNullOrEmpty(username) || string.IsNullOrEmpty(password))
             {
