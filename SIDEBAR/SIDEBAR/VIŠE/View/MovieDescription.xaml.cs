@@ -39,16 +39,23 @@ namespace SIDEBAR.VIŠE.View
 
         private void SaveMovie_Click(object sender, RoutedEventArgs e)
         {
+            int userId = SessionManager.LoggedInUserId;
+
+            if (userId == 0)
+            {
+                MessageBox.Show("User ID not found. Please log in again.");
+                return;
+            }
             if (_currentMovie != null)
             {
-                string connectionString = "your_connection_string_here"; // Replace with your connection string
+                string connectionString = "server=localhost;database=userdatabase;uid=root;pwd=ADGe96zn;"; // Replace with your connection string
                 using (var connection = new MySqlConnection(connectionString))
                 {
                     connection.Open();
                     var query = "INSERT INTO UserMovies (UserId, MovieName, Rating, Image, Director, Description) VALUES (@UserId, @MovieName, @Rating, @Image, @Director, @Description)";
                     using (var command = new MySqlCommand(query, connection))
                     {
-                        command.Parameters.AddWithValue("@UserId", 1); // Replace with the actual user ID
+                        command.Parameters.AddWithValue("@UserId", userId); // Replace with the actual user ID
                         command.Parameters.AddWithValue("@MovieName", _currentMovie.Ime);
                         command.Parameters.AddWithValue("@Rating", _currentMovie.Ocjena);
                         command.Parameters.AddWithValue("@Image", _currentMovie.Image);
@@ -63,16 +70,23 @@ namespace SIDEBAR.VIŠE.View
 
         private void RemoveMovie_Click(object sender, RoutedEventArgs e)
         {
+            int userId = SessionManager.LoggedInUserId;
+
+            if (userId == 0)
+            {
+                MessageBox.Show("User ID not found. Please log in again.");
+                return;
+            }
             if (_currentMovie != null)
             {
-                string connectionString = "your_connection_string_here"; // Replace with your connection string
+                string connectionString = "server=localhost;database=userdatabase;uid=root;pwd=ADGe96zn;"; // Replace with your connection string
                 using (var connection = new MySqlConnection(connectionString))
                 {
                     connection.Open();
                     var query = "DELETE FROM UserMovies WHERE UserId = @UserId AND MovieName = @MovieName";
                     using (var command = new MySqlCommand(query, connection))
                     {
-                        command.Parameters.AddWithValue("@UserId", 1); // Replace with the actual user ID
+                        command.Parameters.AddWithValue("@UserId", userId); // Replace with the actual user ID
                         command.Parameters.AddWithValue("@MovieName", _currentMovie.Ime);
                         command.ExecuteNonQuery();
                     }
