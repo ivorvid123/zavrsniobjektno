@@ -55,10 +55,11 @@ namespace SIDEBAR
             MainContent.Content = new GlavniProzor();
         }
 
-        private void FilmoviISerijeButton_Click(object sender, RoutedEventArgs e)
+        public void FilmoviISerijeButton_Click(object sender, RoutedEventArgs e)
         {
             MainContent.Content = new FilmoviISerije();
         }
+
         private void MojaListaButton_Click(object sender, RoutedEventArgs e)
         {
             MainContent.Content = new MojaLista();
@@ -75,6 +76,7 @@ namespace SIDEBAR
                 this.DragMove();
             }
         }
+         
     }
 }
 

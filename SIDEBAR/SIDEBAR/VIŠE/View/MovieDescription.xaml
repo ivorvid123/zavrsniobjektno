@@ -32,7 +32,16 @@
                        Foreground="LightGray"
                        Height="415"
                        VerticalAlignment="Top"/>
-
+            <Button Content="Nazad"
+         FontWeight="SemiBold"
+         Height="48"
+         Background="Orange"
+         Foreground="Black"
+         FontSize="20"
+         Click="Back_Click"
+         Width="150"
+         Margin="56,416,594,37"
+         />
         </Grid>
     </Viewbox>
 </UserControl>

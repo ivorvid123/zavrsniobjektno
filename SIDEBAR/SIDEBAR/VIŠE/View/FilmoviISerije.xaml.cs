@@ -102,24 +102,22 @@ namespace SIDEBAR.VIŠE.View
             var selectedMovie = button?.DataContext as Movie;
             if (selectedMovie != null)
             {
-                var movieDescriptionPage = new MovieDescription();
-                movieDescriptionPage.SetMovieDetails(selectedMovie);
-
-                // Get the parent window and change the content of the ContentControl
                 var parentWindow = Window.GetWindow(this) as MainWindow;
                 if (parentWindow != null)
                 {
+                    var movieDescriptionPage = new MovieDescription(parentWindow);
+                    movieDescriptionPage.SetMovieDetails(selectedMovie);
                     parentWindow.MainContent.Content = movieDescriptionPage;
                 }
             }
         }
         private void ShowDescription(Movie movie)
         {
-            var movieDescriptionPage = new MovieDescription();
-            movieDescriptionPage.SetMovieDetails(movie);
             var parentWindow = Window.GetWindow(this) as MainWindow;
             if (parentWindow != null)
             {
+                var movieDescriptionPage = new MovieDescription(parentWindow);
+                movieDescriptionPage.SetMovieDetails(movie);
                 parentWindow.MainContent.Content = movieDescriptionPage;
             }
         }
