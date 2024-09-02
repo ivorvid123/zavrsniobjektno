@@ -55,8 +55,8 @@ Margin="400,416,250,37">
 
 
 
-            <Button Content="Nazad"
-        FontWeight="SemiBold"
+            <Button Content="Svi Filmovi"
+        FontWeight="Bold"
         Height="48"
         Background="Orange"
         Foreground="Black"
