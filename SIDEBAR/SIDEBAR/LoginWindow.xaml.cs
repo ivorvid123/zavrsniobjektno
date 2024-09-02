@@ -8,7 +8,7 @@ namespace SIDEBAR
 {
     public partial class LoginWindow : Window
     {
-        private string connectionString = "server=localhost;database=userdatabase;uid=root;pwd=ADGe96zn;";
+        private string connectionString = "server=192.168.1.20;database=userdatabase;uid=root;pwd=ADGe96zn;";
 
         public LoginWindow()
         {

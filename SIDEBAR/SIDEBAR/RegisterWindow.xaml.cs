@@ -10,7 +10,7 @@ namespace SIDEBAR
 {
     public partial class RegisterWindow : Window
     {
-        internal string connectionString = "server=localhost;database=userdatabase;uid=root;pwd=ADGe96zn;";
+        internal string connectionString = "server=192.168.1.20;database=userdatabase;uid=root;pwd=ADGe96zn;";
 
         public RegisterWindow()
         {

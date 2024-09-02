@@ -23,7 +23,7 @@ namespace SIDEBAR.VIŠE.View
                 MessageBox.Show("User ID not found. Please log in again.");
                 return;
             }
-            string connectionString = "server=localhost;database=userdatabase;uid=root;pwd=ADGe96zn;"; // Replace with your connection string
+            string connectionString = "server=192.168.1.20;database=userdatabase;uid=root;pwd=ADGe96zn;"; // Replace with your connection string
             var movies = new List<Movie>();
             using (var connection = new MySqlConnection(connectionString))
             {

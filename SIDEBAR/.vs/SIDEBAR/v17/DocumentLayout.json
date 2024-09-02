@@ -3,12 +3,32 @@
   "WorkspaceRootPath": "C:\\Users\\MARKO\\Documents\\GitHub\\zavrsniobjektno\\SIDEBAR\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{1535C828-927B-4CC0-8121-887A6AC84B30}|SIDEBAR\\SIDEBAR.csproj|C:\\Users\\MARKO\\Documents\\GitHub\\zavrsniobjektno\\SIDEBAR\\sidebar\\vi\u0161e\\view\\filmoviiserije.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{1535C828-927B-4CC0-8121-887A6AC84B30}|SIDEBAR\\SIDEBAR.csproj|solutionrelative:sidebar\\vi\u0161e\\view\\filmoviiserije.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+      "AbsoluteMoniker": "D:0:0:{1535C828-927B-4CC0-8121-887A6AC84B30}|SIDEBAR\\SIDEBAR.csproj|C:\\Users\\MARKO\\Documents\\GitHub\\zavrsniobjektno\\SIDEBAR\\sidebar\\loginwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1535C828-927B-4CC0-8121-887A6AC84B30}|SIDEBAR\\SIDEBAR.csproj|solutionrelative:sidebar\\loginwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1535C828-927B-4CC0-8121-887A6AC84B30}|SIDEBAR\\SIDEBAR.csproj|C:\\Users\\MARKO\\Documents\\GitHub\\zavrsniobjektno\\SIDEBAR\\sidebar\\vi\u0161e\\view\\mojalista.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1535C828-927B-4CC0-8121-887A6AC84B30}|SIDEBAR\\SIDEBAR.csproj|solutionrelative:sidebar\\vi\u0161e\\view\\mojalista.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1535C828-927B-4CC0-8121-887A6AC84B30}|SIDEBAR\\SIDEBAR.csproj|C:\\Users\\MARKO\\Documents\\GitHub\\zavrsniobjektno\\SIDEBAR\\sidebar\\registerwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1535C828-927B-4CC0-8121-887A6AC84B30}|SIDEBAR\\SIDEBAR.csproj|solutionrelative:sidebar\\registerwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1535C828-927B-4CC0-8121-887A6AC84B30}|SIDEBAR\\SIDEBAR.csproj|C:\\Users\\MARKO\\Documents\\GitHub\\zavrsniobjektno\\SIDEBAR\\sidebar\\vi\u0161e\\view\\moviedescription.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1535C828-927B-4CC0-8121-887A6AC84B30}|SIDEBAR\\SIDEBAR.csproj|solutionrelative:sidebar\\vi\u0161e\\view\\moviedescription.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1535C828-927B-4CC0-8121-887A6AC84B30}|SIDEBAR\\SIDEBAR.csproj|C:\\Users\\MARKO\\Documents\\GitHub\\zavrsniobjektno\\SIDEBAR\\sidebar\\vi\u0161e\\view\\account.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1535C828-927B-4CC0-8121-887A6AC84B30}|SIDEBAR\\SIDEBAR.csproj|solutionrelative:sidebar\\vi\u0161e\\view\\account.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{1535C828-927B-4CC0-8121-887A6AC84B30}|SIDEBAR\\SIDEBAR.csproj|C:\\Users\\MARKO\\Documents\\GitHub\\zavrsniobjektno\\SIDEBAR\\sidebar\\vi\u0161e\\view\\filmoviiserije.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{1535C828-927B-4CC0-8121-887A6AC84B30}|SIDEBAR\\SIDEBAR.csproj|solutionrelative:sidebar\\vi\u0161e\\view\\filmoviiserije.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1535C828-927B-4CC0-8121-887A6AC84B30}|SIDEBAR\\SIDEBAR.csproj|C:\\Users\\MARKO\\Documents\\GitHub\\zavrsniobjektno\\SIDEBAR\\sidebar\\vi\u0161e\\view\\filmoviiserije.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{1535C828-927B-4CC0-8121-887A6AC84B30}|SIDEBAR\\SIDEBAR.csproj|solutionrelative:sidebar\\vi\u0161e\\view\\filmoviiserije.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{1535C828-927B-4CC0-8121-887A6AC84B30}|SIDEBAR\\SIDEBAR.csproj|C:\\Users\\MARKO\\Documents\\GitHub\\zavrsniobjektno\\SIDEBAR\\sidebar\\vi\u0161e\\viewmodel\\filmoviiserijeviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -23,10 +43,6 @@
       "RelativeMoniker": "D:0:0:{1535C828-927B-4CC0-8121-887A6AC84B30}|SIDEBAR\\SIDEBAR.csproj|solutionrelative:sidebar\\vi\u0161e\\view\\moviedescription.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1535C828-927B-4CC0-8121-887A6AC84B30}|SIDEBAR\\SIDEBAR.csproj|C:\\Users\\MARKO\\Documents\\GitHub\\zavrsniobjektno\\SIDEBAR\\sidebar\\vi\u0161e\\view\\account.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1535C828-927B-4CC0-8121-887A6AC84B30}|SIDEBAR\\SIDEBAR.csproj|solutionrelative:sidebar\\vi\u0161e\\view\\account.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{1535C828-927B-4CC0-8121-887A6AC84B30}|SIDEBAR\\SIDEBAR.csproj|C:\\Users\\MARKO\\Documents\\GitHub\\zavrsniobjektno\\SIDEBAR\\sidebar\\app.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{1535C828-927B-4CC0-8121-887A6AC84B30}|SIDEBAR\\SIDEBAR.csproj|solutionrelative:sidebar\\app.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -38,10 +54,6 @@
       "RelativeMoniker": "D:0:0:{1535C828-927B-4CC0-8121-887A6AC84B30}|SIDEBAR\\SIDEBAR.csproj|solutionrelative:sidebar\\vi\u0161e\\view\\account.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1535C828-927B-4CC0-8121-887A6AC84B30}|SIDEBAR\\SIDEBAR.csproj|C:\\Users\\MARKO\\Documents\\GitHub\\zavrsniobjektno\\SIDEBAR\\sidebar\\vi\u0161e\\view\\moviedescription.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1535C828-927B-4CC0-8121-887A6AC84B30}|SIDEBAR\\SIDEBAR.csproj|solutionrelative:sidebar\\vi\u0161e\\view\\moviedescription.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{1535C828-927B-4CC0-8121-887A6AC84B30}|SIDEBAR\\SIDEBAR.csproj|C:\\Users\\MARKO\\Documents\\GitHub\\zavrsniobjektno\\SIDEBAR\\sidebar\\loginwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{1535C828-927B-4CC0-8121-887A6AC84B30}|SIDEBAR\\SIDEBAR.csproj|solutionrelative:sidebar\\loginwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
@@ -50,20 +62,8 @@
       "RelativeMoniker": "D:0:0:{1535C828-927B-4CC0-8121-887A6AC84B30}|SIDEBAR\\SIDEBAR.csproj|solutionrelative:sidebar\\registerwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1535C828-927B-4CC0-8121-887A6AC84B30}|SIDEBAR\\SIDEBAR.csproj|C:\\Users\\MARKO\\Documents\\GitHub\\zavrsniobjektno\\SIDEBAR\\sidebar\\loginwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1535C828-927B-4CC0-8121-887A6AC84B30}|SIDEBAR\\SIDEBAR.csproj|solutionrelative:sidebar\\loginwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1535C828-927B-4CC0-8121-887A6AC84B30}|SIDEBAR\\SIDEBAR.csproj|C:\\Users\\MARKO\\Documents\\GitHub\\zavrsniobjektno\\SIDEBAR\\sidebar\\registerwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1535C828-927B-4CC0-8121-887A6AC84B30}|SIDEBAR\\SIDEBAR.csproj|solutionrelative:sidebar\\registerwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{1535C828-927B-4CC0-8121-887A6AC84B30}|SIDEBAR\\SIDEBAR.csproj|C:\\Users\\MARKO\\Documents\\GitHub\\zavrsniobjektno\\SIDEBAR\\sidebar\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{1535C828-927B-4CC0-8121-887A6AC84B30}|SIDEBAR\\SIDEBAR.csproj|solutionrelative:sidebar\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1535C828-927B-4CC0-8121-887A6AC84B30}|SIDEBAR\\SIDEBAR.csproj|C:\\Users\\MARKO\\Documents\\GitHub\\zavrsniobjektno\\SIDEBAR\\sidebar\\vi\u0161e\\view\\mojalista.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1535C828-927B-4CC0-8121-887A6AC84B30}|SIDEBAR\\SIDEBAR.csproj|solutionrelative:sidebar\\vi\u0161e\\view\\mojalista.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{1535C828-927B-4CC0-8121-887A6AC84B30}|SIDEBAR\\SIDEBAR.csproj|C:\\Users\\MARKO\\Documents\\GitHub\\zavrsniobjektno\\SIDEBAR\\sidebar\\vi\u0161e\\view\\mojalista.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
@@ -128,16 +128,16 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 13,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 6,
               "Title": "FilmoviISerije.xaml",
               "DocumentMoniker": "C:\\Users\\MARKO\\Documents\\GitHub\\zavrsniobjektno\\SIDEBAR\\SIDEBAR\\VI\u0160E\\View\\FilmoviISerije.xaml",
               "RelativeDocumentMoniker": "SIDEBAR\\VI\u0160E\\View\\FilmoviISerije.xaml",
-              "ToolTip": "C:\\Users\\MARKO\\Documents\\GitHub\\zavrsniobjektno\\SIDEBAR\\SIDEBAR\\VI\u0160E\\View\\FilmoviISerije.xaml*",
-              "RelativeToolTip": "SIDEBAR\\VI\u0160E\\View\\FilmoviISerije.xaml*",
+              "ToolTip": "C:\\Users\\MARKO\\Documents\\GitHub\\zavrsniobjektno\\SIDEBAR\\SIDEBAR\\VI\u0160E\\View\\FilmoviISerije.xaml",
+              "RelativeToolTip": "SIDEBAR\\VI\u0160E\\View\\FilmoviISerije.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
               "WhenOpened": "2024-08-28T13:34:29.566Z",
               "IsPinned": true,
@@ -145,13 +145,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 5,
               "Title": "FilmoviISerije.xaml.cs",
               "DocumentMoniker": "C:\\Users\\MARKO\\Documents\\GitHub\\zavrsniobjektno\\SIDEBAR\\SIDEBAR\\VI\u0160E\\View\\FilmoviISerije.xaml.cs",
               "RelativeDocumentMoniker": "SIDEBAR\\VI\u0160E\\View\\FilmoviISerije.xaml.cs",
               "ToolTip": "C:\\Users\\MARKO\\Documents\\GitHub\\zavrsniobjektno\\SIDEBAR\\SIDEBAR\\VI\u0160E\\View\\FilmoviISerije.xaml.cs",
               "RelativeToolTip": "SIDEBAR\\VI\u0160E\\View\\FilmoviISerije.xaml.cs",
-              "ViewState": "AQIAACUAAAAAAAAAAAAYwDoAAAAAAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAHIAAAAJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-08-28T13:53:15.385Z",
               "IsPinned": true,
@@ -178,14 +178,15 @@
               "RelativeDocumentMoniker": "SIDEBAR\\VI\u0160E\\ViewModel\\HomeView.cs",
               "ToolTip": "C:\\Users\\MARKO\\Documents\\GitHub\\zavrsniobjektno\\SIDEBAR\\SIDEBAR\\VI\u0160E\\ViewModel\\HomeView.cs",
               "RelativeToolTip": "SIDEBAR\\VI\u0160E\\ViewModel\\HomeView.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-08-23T15:58:42.604Z",
-              "IsPinned": true
+              "IsPinned": true,
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 11,
               "Title": "ResourcePart.cs",
               "DocumentMoniker": "C:\\Users\\MARKO\\AppData\\Local\\Temp\\.vsdbgsrc\\c6ee7f6fec133611eb2a064e1a788d1d2474410b0c2beae8c7d187c8d89dcad0\\ResourcePart.cs",
               "RelativeDocumentMoniker": "..\\..\\..\\..\\AppData\\Local\\Temp\\.vsdbgsrc\\c6ee7f6fec133611eb2a064e1a788d1d2474410b0c2beae8c7d187c8d89dcad0\\ResourcePart.cs",
@@ -198,7 +199,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 10,
               "Title": "App.xaml.cs",
               "DocumentMoniker": "C:\\Users\\MARKO\\Documents\\GitHub\\zavrsniobjektno\\SIDEBAR\\SIDEBAR\\App.xaml.cs",
               "RelativeDocumentMoniker": "SIDEBAR\\App.xaml.cs",
@@ -211,20 +212,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 4,
               "Title": "Account.xaml.cs",
               "DocumentMoniker": "C:\\Users\\MARKO\\Documents\\GitHub\\zavrsniobjektno\\SIDEBAR\\SIDEBAR\\VI\u0160E\\View\\Account.xaml.cs",
               "RelativeDocumentMoniker": "SIDEBAR\\VI\u0160E\\View\\Account.xaml.cs",
               "ToolTip": "C:\\Users\\MARKO\\Documents\\GitHub\\zavrsniobjektno\\SIDEBAR\\SIDEBAR\\VI\u0160E\\View\\Account.xaml.cs",
               "RelativeToolTip": "SIDEBAR\\VI\u0160E\\View\\Account.xaml.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAGsAAAABAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAA4AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-09-02T16:57:08.792Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 9,
               "Title": "MovieDescription.xaml",
               "DocumentMoniker": "C:\\Users\\MARKO\\Documents\\GitHub\\zavrsniobjektno\\SIDEBAR\\SIDEBAR\\VI\u0160E\\View\\MovieDescription.xaml",
               "RelativeDocumentMoniker": "SIDEBAR\\VI\u0160E\\View\\MovieDescription.xaml",
@@ -236,20 +237,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 3,
               "Title": "MovieDescription.xaml.cs",
               "DocumentMoniker": "C:\\Users\\MARKO\\Documents\\GitHub\\zavrsniobjektno\\SIDEBAR\\SIDEBAR\\VI\u0160E\\View\\MovieDescription.xaml.cs",
               "RelativeDocumentMoniker": "SIDEBAR\\VI\u0160E\\View\\MovieDescription.xaml.cs",
               "ToolTip": "C:\\Users\\MARKO\\Documents\\GitHub\\zavrsniobjektno\\SIDEBAR\\SIDEBAR\\VI\u0160E\\View\\MovieDescription.xaml.cs",
               "RelativeToolTip": "SIDEBAR\\VI\u0160E\\View\\MovieDescription.xaml.cs",
-              "ViewState": "AQIAAAEAAAAAAAAAAAAuwA0AAAAAAAAA",
+              "ViewState": "AQIAAD4AAAAAAAAAAAAhwFEAAAA+AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-08-29T15:35:54.892Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 15,
               "Title": "MainWindow.xaml.cs",
               "DocumentMoniker": "C:\\Users\\MARKO\\Documents\\GitHub\\zavrsniobjektno\\SIDEBAR\\SIDEBAR\\MainWindow.xaml.cs",
               "RelativeDocumentMoniker": "SIDEBAR\\MainWindow.xaml.cs",
@@ -262,7 +263,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 14,
               "Title": "RegisterWindow.xaml",
               "DocumentMoniker": "C:\\Users\\MARKO\\Documents\\GitHub\\zavrsniobjektno\\SIDEBAR\\SIDEBAR\\RegisterWindow.xaml",
               "RelativeDocumentMoniker": "SIDEBAR\\RegisterWindow.xaml",
@@ -274,20 +275,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 2,
               "Title": "RegisterWindow.xaml.cs",
               "DocumentMoniker": "C:\\Users\\MARKO\\Documents\\GitHub\\zavrsniobjektno\\SIDEBAR\\SIDEBAR\\RegisterWindow.xaml.cs",
               "RelativeDocumentMoniker": "SIDEBAR\\RegisterWindow.xaml.cs",
               "ToolTip": "C:\\Users\\MARKO\\Documents\\GitHub\\zavrsniobjektno\\SIDEBAR\\SIDEBAR\\RegisterWindow.xaml.cs",
               "RelativeToolTip": "SIDEBAR\\RegisterWindow.xaml.cs",
-              "ViewState": "AQIAADMAAAAAAAAAAAAYwEQAAAAfAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAA/AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-09-02T11:27:03.601Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 12,
               "Title": "Account.xaml",
               "DocumentMoniker": "C:\\Users\\MARKO\\Documents\\GitHub\\zavrsniobjektno\\SIDEBAR\\SIDEBAR\\VI\u0160E\\View\\Account.xaml",
               "RelativeDocumentMoniker": "SIDEBAR\\VI\u0160E\\View\\Account.xaml",
@@ -299,20 +300,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 0,
               "Title": "LoginWindow.xaml.cs",
               "DocumentMoniker": "C:\\Users\\MARKO\\Documents\\GitHub\\zavrsniobjektno\\SIDEBAR\\SIDEBAR\\LoginWindow.xaml.cs",
               "RelativeDocumentMoniker": "SIDEBAR\\LoginWindow.xaml.cs",
               "ToolTip": "C:\\Users\\MARKO\\Documents\\GitHub\\zavrsniobjektno\\SIDEBAR\\SIDEBAR\\LoginWindow.xaml.cs",
               "RelativeToolTip": "SIDEBAR\\LoginWindow.xaml.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAADwAAAAMAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-09-02T11:39:54.688Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 13,
               "Title": "LoginWindow.xaml",
               "DocumentMoniker": "C:\\Users\\MARKO\\Documents\\GitHub\\zavrsniobjektno\\SIDEBAR\\SIDEBAR\\LoginWindow.xaml",
               "RelativeDocumentMoniker": "SIDEBAR\\LoginWindow.xaml",
@@ -330,13 +331,14 @@
               "RelativeDocumentMoniker": "SIDEBAR\\VI\u0160E\\ViewModel\\OpisVM.cs",
               "ToolTip": "C:\\Users\\MARKO\\Documents\\GitHub\\zavrsniobjektno\\SIDEBAR\\SIDEBAR\\VI\u0160E\\ViewModel\\OpisVM.cs",
               "RelativeToolTip": "SIDEBAR\\VI\u0160E\\ViewModel\\OpisVM.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAC4AAABJAAAAAAAAAA==",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-29T16:04:15.839Z"
+              "WhenOpened": "2024-08-29T16:04:15.839Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 8,
               "Title": "Movie.cs",
               "DocumentMoniker": "C:\\Users\\MARKO\\Documents\\GitHub\\zavrsniobjektno\\SIDEBAR\\SIDEBAR\\VI\u0160E\\View\\Movie.cs",
               "RelativeDocumentMoniker": "SIDEBAR\\VI\u0160E\\View\\Movie.cs",
@@ -349,13 +351,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 1,
               "Title": "MojaLista.xaml.cs",
               "DocumentMoniker": "C:\\Users\\MARKO\\Documents\\GitHub\\zavrsniobjektno\\SIDEBAR\\SIDEBAR\\VI\u0160E\\View\\MojaLista.xaml.cs",
               "RelativeDocumentMoniker": "SIDEBAR\\VI\u0160E\\View\\MojaLista.xaml.cs",
               "ToolTip": "C:\\Users\\MARKO\\Documents\\GitHub\\zavrsniobjektno\\SIDEBAR\\SIDEBAR\\VI\u0160E\\View\\MojaLista.xaml.cs",
               "RelativeToolTip": "SIDEBAR\\VI\u0160E\\View\\MojaLista.xaml.cs",
-              "ViewState": "AQIAACwAAAAAAAAAAAAowDQAAAAuAAAA",
+              "ViewState": "AQIAAA0AAAAAAAAAAAAQwCYAAAAyAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-08-28T14:10:11.351Z",
               "EditorCaption": ""
@@ -380,13 +382,14 @@
               "RelativeDocumentMoniker": "SIDEBAR\\VI\u0160E\\ViewModel\\Lista.cs",
               "ToolTip": "C:\\Users\\MARKO\\Documents\\GitHub\\zavrsniobjektno\\SIDEBAR\\SIDEBAR\\VI\u0160E\\ViewModel\\Lista.cs",
               "RelativeToolTip": "SIDEBAR\\VI\u0160E\\ViewModel\\Lista.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-28T13:22:11.951Z"
+              "WhenOpened": "2024-08-28T13:22:11.951Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 7,
               "Title": "FilmoviISerijeViewModel.cs",
               "DocumentMoniker": "C:\\Users\\MARKO\\Documents\\GitHub\\zavrsniobjektno\\SIDEBAR\\SIDEBAR\\VI\u0160E\\ViewModel\\FilmoviISerijeViewModel.cs",
               "RelativeDocumentMoniker": "SIDEBAR\\VI\u0160E\\ViewModel\\FilmoviISerijeViewModel.cs",
@@ -405,9 +408,10 @@
               "RelativeDocumentMoniker": "SIDEBAR\\RelayCommand.cs",
               "ToolTip": "C:\\Users\\MARKO\\Documents\\GitHub\\zavrsniobjektno\\SIDEBAR\\SIDEBAR\\RelayCommand.cs",
               "RelativeToolTip": "SIDEBAR\\RelayCommand.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACEAAAAAAAAAAAAAAA==",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-28T13:15:32.14Z"
+              "WhenOpened": "2024-08-28T13:15:32.14Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -417,9 +421,10 @@
               "RelativeDocumentMoniker": "SIDEBAR\\VI\u0160E\\View\\GlavniProzor.xaml.cs",
               "ToolTip": "C:\\Users\\MARKO\\Documents\\GitHub\\zavrsniobjektno\\SIDEBAR\\SIDEBAR\\VI\u0160E\\View\\GlavniProzor.xaml.cs",
               "RelativeToolTip": "SIDEBAR\\VI\u0160E\\View\\GlavniProzor.xaml.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB4AAAAAAAAAAAAAAA==",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-23T16:38:05.023Z"
+              "WhenOpened": "2024-08-23T16:38:05.023Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -465,7 +470,8 @@
               "ToolTip": "C:\\Users\\MARKO\\Documents\\GitHub\\zavrsniobjektno\\SIDEBAR\\SIDEBAR\\VI\u0160E\\View\\GlavniProzor.xaml",
               "RelativeToolTip": "SIDEBAR\\VI\u0160E\\View\\GlavniProzor.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-08-23T15:58:42.605Z"
+              "WhenOpened": "2024-08-23T15:58:42.605Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -475,9 +481,10 @@
               "RelativeDocumentMoniker": "SIDEBAR\\VI\u0160E\\ViewModel\\GlavniViewModel.cs",
               "ToolTip": "C:\\Users\\MARKO\\Documents\\GitHub\\zavrsniobjektno\\SIDEBAR\\SIDEBAR\\VI\u0160E\\ViewModel\\GlavniViewModel.cs",
               "RelativeToolTip": "SIDEBAR\\VI\u0160E\\ViewModel\\GlavniViewModel.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB8AAAAAAAAAAAAAAA==",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-23T15:58:42.606Z"
+              "WhenOpened": "2024-08-23T15:58:42.606Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -499,9 +506,10 @@
               "RelativeDocumentMoniker": "SIDEBAR\\CORE\\Core.cs",
               "ToolTip": "C:\\Users\\MARKO\\Documents\\GitHub\\zavrsniobjektno\\SIDEBAR\\SIDEBAR\\CORE\\Core.cs",
               "RelativeToolTip": "SIDEBAR\\CORE\\Core.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAAAAAAAAAAAA==",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-23T15:58:42.608Z"
+              "WhenOpened": "2024-08-23T15:58:42.608Z",
+              "EditorCaption": ""
             }
           ]
         }

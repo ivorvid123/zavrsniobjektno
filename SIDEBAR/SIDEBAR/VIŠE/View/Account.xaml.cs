@@ -9,7 +9,7 @@ namespace SIDEBAR.VIŠE.View
     public partial class Account : UserControl, INotifyPropertyChanged
     {
         // Connection string for MySQL database
-        private const string ConnectionString = "Server=localhost;Database=userdatabase;uid=root;Password=ADGe96zn;";
+        private const string ConnectionString = "Server=192.168.1.20;Database=userdatabase;uid=root;Password=ADGe96zn;";
 
         private User _currentUser;
         public User CurrentUser

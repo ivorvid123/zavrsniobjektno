@@ -240,7 +240,7 @@
                             Background="Transparent" 
                             Foreground="White"
                             FontWeight="Bold"
-                            BorderBrush="White"
+                            BorderBrush="GhostWhite"
                             BorderThickness="2"
                             Margin="0,5,0,5">
                             <Button.Template>

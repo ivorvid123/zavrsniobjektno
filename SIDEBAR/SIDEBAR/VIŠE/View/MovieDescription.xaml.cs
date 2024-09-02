@@ -48,7 +48,7 @@ namespace SIDEBAR.VIŠE.View
             }
             if (_currentMovie != null)
             {
-                string connectionString = "server=localhost;database=userdatabase;uid=root;pwd=ADGe96zn;"; // Replace with your connection string
+                string connectionString = "server=192.168.1.20;database=userdatabase;uid=root;pwd=ADGe96zn;"; // Replace with your connection string
                 using (var connection = new MySqlConnection(connectionString))
                 {
                     connection.Open();
@@ -79,7 +79,7 @@ namespace SIDEBAR.VIŠE.View
             }
             if (_currentMovie != null)
             {
-                string connectionString = "server=localhost;database=userdatabase;uid=root;pwd=ADGe96zn;"; // Replace with your connection string
+                string connectionString = "server=192.168.1.20;database=userdatabase;uid=root;pwd=ADGe96zn;"; // Replace with your connection string
                 using (var connection = new MySqlConnection(connectionString))
                 {
                     connection.Open();
