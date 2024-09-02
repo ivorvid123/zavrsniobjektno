@@ -6,11 +6,8 @@
              xmlns:local="clr-namespace:SIDEBAR.VIŠE.View"
              mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="501">
 
-    <!-- Wrapping the entire content in a Viewbox for scaling -->
     <Viewbox Stretch="Uniform">
         <Grid Width="800" Height="501" Background="#272426">
-            <!-- Setting base size -->
-
             <TextBlock x:Name="MovieTitle"
                        FontSize="28"
                        FontWeight="Bold"
@@ -32,16 +29,36 @@
                        Foreground="LightGray"
                        Height="415"
                        VerticalAlignment="Top"/>
+
+            <Button Content="Save Movie"
+                    FontWeight="SemiBold"
+                    Height="48"
+                    Background="Green"
+                    Foreground="White"
+                    FontSize="20"
+                    Click="SaveMovie_Click"
+                    Width="150"
+                    Margin="363,416,287,37"/>
+
+            <Button Content="Remove Movie"
+                    FontWeight="SemiBold"
+                    Height="48"
+                    Background="Red"
+                    Foreground="White"
+                    FontSize="20"
+                    Click="RemoveMovie_Click"
+                    Width="150"
+                    Margin="558,416,92,37"/>
+
             <Button Content="Nazad"
-         FontWeight="SemiBold"
-         Height="48"
-         Background="Orange"
-         Foreground="Black"
-         FontSize="20"
-         Click="Back_Click"
-         Width="150"
-         Margin="56,416,594,37"
-         />
+                    FontWeight="SemiBold"
+                    Height="48"
+                    Background="Orange"
+                    Foreground="Black"
+                    FontSize="20"
+                    Click="Back_Click"
+                    Width="150"
+                    Margin="56,416,594,37"/>
         </Grid>
     </Viewbox>
 </UserControl>

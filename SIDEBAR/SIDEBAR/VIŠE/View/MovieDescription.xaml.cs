@@ -1,33 +1,32 @@
 ﻿using System;
 using System.Windows;
 using System.Windows.Controls;
-using System.Windows.Media;
 using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
+using MySql.Data.MySqlClient;
 
 namespace SIDEBAR.VIŠE.View
 {
     public partial class MovieDescription : UserControl
     {
         private MainWindow _mainWindow;
+        private Movie _currentMovie;
 
-    // Constructor that accepts a reference to MainWindow
-      public MovieDescription(MainWindow mainWindow)
-    {
-        InitializeComponent();
-        _mainWindow = mainWindow;
-    }
-        
+        public MovieDescription(MainWindow mainWindow)
+        {
+            InitializeComponent();
+            _mainWindow = mainWindow;
+        }
 
         public void SetMovieDetails(Movie movie)
         {
+            _currentMovie = movie;
             MovieTitle.Text = movie.Ime;
             MovieImage.Source = new BitmapImage(new Uri(movie.Image, UriKind.Relative));
-            MovieDetails.Text = $"{movie.Opis}\n\n Director:{movie.Director}. \n\n Ocjena: {movie.Ocjena} \n Detalji sa Imdb"; // Placeholder for actual description
+            MovieDetails.Text = $"{movie.Opis}\n\nDirector: {movie.Director}\n\nRating: {movie.Ocjena}\nDetails from IMDb";
         }
+
         private void Back_Click(object sender, RoutedEventArgs e)
         {
-
             if (_mainWindow != null)
             {
                 _mainWindow.MainContent.Content = new FilmoviISerije();
@@ -38,5 +37,48 @@ namespace SIDEBAR.VIŠE.View
             }
         }
 
+        private void SaveMovie_Click(object sender, RoutedEventArgs e)
+        {
+            if (_currentMovie != null)
+            {
+                string connectionString = "your_connection_string_here"; // Replace with your connection string
+                using (var connection = new MySqlConnection(connectionString))
+                {
+                    connection.Open();
+                    var query = "INSERT INTO UserMovies (UserId, MovieName, Rating, Image, Director, Description) VALUES (@UserId, @MovieName, @Rating, @Image, @Director, @Description)";
+                    using (var command = new MySqlCommand(query, connection))
+                    {
+                        command.Parameters.AddWithValue("@UserId", 1); // Replace with the actual user ID
+                        command.Parameters.AddWithValue("@MovieName", _currentMovie.Ime);
+                        command.Parameters.AddWithValue("@Rating", _currentMovie.Ocjena);
+                        command.Parameters.AddWithValue("@Image", _currentMovie.Image);
+                        command.Parameters.AddWithValue("@Director", _currentMovie.Director);
+                        command.Parameters.AddWithValue("@Description", _currentMovie.Opis);
+                        command.ExecuteNonQuery();
+                    }
+                }
+                MessageBox.Show("Movie saved successfully.");
+            }
+        }
+
+        private void RemoveMovie_Click(object sender, RoutedEventArgs e)
+        {
+            if (_currentMovie != null)
+            {
+                string connectionString = "your_connection_string_here"; // Replace with your connection string
+                using (var connection = new MySqlConnection(connectionString))
+                {
+                    connection.Open();
+                    var query = "DELETE FROM UserMovies WHERE UserId = @UserId AND MovieName = @MovieName";
+                    using (var command = new MySqlCommand(query, connection))
+                    {
+                        command.Parameters.AddWithValue("@UserId", 1); // Replace with the actual user ID
+                        command.Parameters.AddWithValue("@MovieName", _currentMovie.Ime);
+                        command.ExecuteNonQuery();
+                    }
+                }
+                MessageBox.Show("Movie removed successfully.");
+            }
+        }
     }
 }
