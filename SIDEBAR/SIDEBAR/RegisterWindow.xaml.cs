@@ -3,14 +3,14 @@ using System.Collections.Generic;
 using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Input;
-using MySql.Data.MySqlClient; // Add this using directive
+using MySql.Data.MySqlClient;
 using SIDEBAR;
 
 namespace SIDEBAR
 {
     public partial class RegisterWindow : Window
     {
-        internal string connectionString = "server=192.168.1.20;database=userdatabase;uid=root;pwd=ADGe96zn;";
+        internal string connectionString = "server=88.207.112.60;database=userdatabase;uid=root;pwd=ADGe96zn;";
 
         public RegisterWindow()
         {
@@ -19,12 +19,12 @@ namespace SIDEBAR
 
         private void RegisterButton_Click(object sender, RoutedEventArgs e)
         {
-            string username = txtEmail.Text;
-            string password = txtPassword.Password;
+            string email = txtEmail.Text;
+            string lozinka = txtPassword.Password;
 
-            if (string.IsNullOrEmpty(username) || string.IsNullOrEmpty(password))
+            if (string.IsNullOrEmpty(email) || string.IsNullOrEmpty(lozinka))
             {
-                MessageBox.Show("Please enter a valid username and password.");
+                MessageBox.Show("Molim vas unesite pravilan email i lozinku.");
                 return;
             }
 
@@ -33,25 +33,24 @@ namespace SIDEBAR
                 try
                 {
                     conn.Open();
-                    // Check if the username already exists
                     string checkUserQuery = "SELECT COUNT(*) FROM users WHERE email = @email";
                     MySqlCommand checkUserCmd = new MySqlCommand(checkUserQuery, conn);
-                    checkUserCmd.Parameters.AddWithValue("@email", username);
+                    checkUserCmd.Parameters.AddWithValue("@email", email);
                     int userExists = Convert.ToInt32(checkUserCmd.ExecuteScalar());
 
                     if (userExists > 0)
                     {
-                        MessageBox.Show("Username already exists. Please choose a different username.");
+                        MessageBox.Show("Email vec postoji. Molim vas unesite drugi email.");
                     }
                     else
                     {
-                        // Insert the new user into the database
-                        string insertQuery = "INSERT INTO users (email, password) VALUES (@email, @password)";
+                        // Unos novog korisnika u bazu podataka
+                        string insertQuery = "INSERT INTO users (email, password) VALUES (@Email, @Lozinka)";
                         MySqlCommand cmd = new MySqlCommand(insertQuery, conn);
-                        cmd.Parameters.AddWithValue("@email", username);
-                        cmd.Parameters.AddWithValue("@password", password); // In real applications, hash the password!
+                        cmd.Parameters.AddWithValue("@Email", email);
+                        cmd.Parameters.AddWithValue("@Lozinka", lozinka);
                         cmd.ExecuteNonQuery();
-                        MessageBox.Show("Registration successful! Please login.");
+                        MessageBox.Show("Uspješno ste registrirani. Molim vas prijavite se.");
                         LoginWindow loginWindow = new LoginWindow();
                         loginWindow.Show();
                         this.Close();
@@ -59,7 +58,7 @@ namespace SIDEBAR
                 }
                 catch (Exception ex)
                 {
-                    MessageBox.Show("An error occurred: " + ex.Message);
+                    MessageBox.Show("Dogodila se greška: " + ex.Message);
                 }
             }
         }
@@ -94,7 +93,6 @@ namespace SIDEBAR
 
         private void TitleBar_MouseLeftButtonDown(object sender, MouseButtonEventArgs e)
         {
-            // Initiates the dragging of the window.
             if (e.ButtonState == MouseButtonState.Pressed)
             {
                 this.DragMove();

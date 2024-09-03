@@ -10,9 +10,7 @@
         WindowStyle="None"
         ResizeMode="NoResize"
         Background="Transparent"
-        AllowsTransparency="True"
-        
-        >
+        AllowsTransparency="True">
 
     <Window.DataContext>
         <ViewModel:GlavniViewModel/>
@@ -36,8 +34,6 @@
             </Grid.RowDefinitions>
 
 
-
-            <!-- Custom Title Bar -->
             <Grid Grid.ColumnSpan="2" Background="#2E2C2F" MouseLeftButtonDown="TitleBar_MouseLeftButtonDown">
                 <TextBlock Text="FilmoSkop"
                            VerticalAlignment="Center"
@@ -47,7 +43,6 @@
                            Margin="10,0,0,0"/>
 
                 <StackPanel Orientation="Horizontal" HorizontalAlignment="Right">
-                    <!-- Minimize Button -->
                     <Button Width="30" Height="30" Background="Transparent" BorderBrush="Transparent" Click="Minimize_Click">
                         <Path Data="M 0,0 L 10,0" Stroke="White" StrokeThickness="2" HorizontalAlignment="Center" VerticalAlignment="Center"/>
                     </Button>
@@ -55,14 +50,11 @@
                         <Path Data="M 0,0 L 10,0 L 10,10 L 0,10 Z" Stroke="White" StrokeThickness="2" HorizontalAlignment="Center" VerticalAlignment="Center"/>
                     </Button>
 
-                    <!-- Close Button -->
                     <Button Width="30" Height="30" Background="Transparent" BorderBrush="Transparent" Click="Close_Click">
                         <Path Data="M 0,0 L 10,10 M 0,10 L 10,0" Stroke="White" StrokeThickness="2" HorizontalAlignment="Center" VerticalAlignment="Center"/>
                     </Button>
                 </StackPanel>
             </Grid>
-            <!-- Main Content -->
-            <!-- Main Content -->
 
 
             <StackPanel Grid.Row="2" Grid.RowSpan="2">
@@ -102,7 +94,7 @@
             <Grid Grid.Column="1" Margin="5,10,0,10" Grid.Row="2" Grid.RowSpan="2" x:Name="MainGrid">
                 <ContentControl
                             Margin="0,0,10,10"
-                            x:Name="MainContent" />
+                            x:Name="MainContent"/>
             </Grid>
 
         </Grid>

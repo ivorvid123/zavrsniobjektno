@@ -34,10 +34,8 @@ namespace SIDEBAR.VIŠE.ViewModel
 
         public OpisVM()
         {
-            // Initialize default view
             TrenutniPrikaz = new HomeView();
 
-            // Initialize commands
             PrikaziFilmoviISerijeCommand = new RelayCommand(_ => ShowFilmoviISerije());
 
             PrikaziListuCommand = new RelayCommand(_ => ShowList());
@@ -50,53 +48,41 @@ namespace SIDEBAR.VIŠE.ViewModel
 
         private void ShowAccount()
         {
-            // Create the UserControl instance
+
             var acountview = new VIŠE.View.Account();
 
-            // Set the DataContext to the appropriate ViewModel
             acountview.DataContext = new AccountVM();
 
-            // Update the current view
             TrenutniPrikaz = acountview;
         }
         private void ShowList()
         {
-            // Create the UserControl instance
             var listaview = new VIŠE.View.MojaLista();
 
-            // Set the DataContext to the appropriate ViewModel
             listaview.DataContext = new Lista();
 
-            // Update the current view
             TrenutniPrikaz = listaview;
         }
 
 
         private void ShowFilmoviISerije()
         {
-            // Create the UserControl instance
             var filmoviISerijeView = new VIŠE.View.FilmoviISerije();
 
-            // Set the DataContext to the appropriate ViewModel
             filmoviISerijeView.DataContext = new FilmoviISerijeViewModel();
 
-            // Update the current view
             TrenutniPrikaz = filmoviISerijeView;
         }
 
         private void ShowHome()
         {
-            // Create the UserControl instance
             var homeview = new VIŠE.View.GlavniProzor();
 
-            // Set the DataContext to the appropriate ViewModel
             homeview.DataContext = new HomeView();
 
-            // Update the current view
             TrenutniPrikaz = homeview;
         }
 
-        // Implement INotifyPropertyChanged
         public event PropertyChangedEventHandler PropertyChanged;
         protected void OnPropertyChanged(string propertyName)
         {

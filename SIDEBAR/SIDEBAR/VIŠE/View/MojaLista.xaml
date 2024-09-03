@@ -5,7 +5,7 @@
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:local="clr-namespace:SIDEBAR.VIŠE.View"
              mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="501">
-    <!-- Wrapping the entire content in a Viewbox for proportional scaling -->
+
     <Viewbox Stretch="Uniform">
         <Grid Width="800" Height="501">
             <Grid.RowDefinitions>

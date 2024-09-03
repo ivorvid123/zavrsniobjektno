@@ -70,7 +70,6 @@ namespace SIDEBAR
         }
         private void TitleBar_MouseLeftButtonDown(object sender, MouseButtonEventArgs e)
         {
-            // Initiates the dragging of the window.
             if (e.ButtonState == MouseButtonState.Pressed)
             {
                 this.DragMove();

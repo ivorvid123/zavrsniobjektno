@@ -9,7 +9,7 @@ namespace SIDEBAR.VIŠE.View
     public partial class MovieDescription : UserControl
     {
         private MainWindow _mainWindow;
-        private Movie _currentMovie;
+        private Movie _trenutniFilm;
 
         public MovieDescription(MainWindow mainWindow)
         {
@@ -19,7 +19,7 @@ namespace SIDEBAR.VIŠE.View
 
         public void SetMovieDetails(Movie movie)
         {
-            _currentMovie = movie;
+            _trenutniFilm = movie;
             MovieTitle.Text = movie.Ime;
             MovieImage.Source = new BitmapImage(new Uri(movie.Image, UriKind.Relative));
             MovieDetails.Text = $"{movie.Opis}\n\nDirector: {movie.Director}\n\nRating: {movie.Ocjena}\nDetails from IMDb";
@@ -33,7 +33,7 @@ namespace SIDEBAR.VIŠE.View
             }
             else
             {
-                MessageBox.Show("Main window reference is not set.");
+                MessageBox.Show("Referenca na glavni prozor nije postavljena.");
             }
         }
 
@@ -43,28 +43,48 @@ namespace SIDEBAR.VIŠE.View
 
             if (userId == 0)
             {
-                MessageBox.Show("User ID not found. Please log in again.");
+                MessageBox.Show("Nije pronađen user ID.");
                 return;
             }
-            if (_currentMovie != null)
+
+            if (_trenutniFilm != null)
             {
-                string connectionString = "server=192.168.1.20;database=userdatabase;uid=root;pwd=ADGe96zn;"; // Replace with your connection string
+                string connectionString = "server=88.207.112.60;database=userdatabase;uid=root;pwd=ADGe96zn;";
+
                 using (var connection = new MySqlConnection(connectionString))
                 {
                     connection.Open();
-                    var query = "INSERT INTO UserMovies (UserId, MovieName, Rating, Image, Director, Description) VALUES (@UserId, @MovieName, @Rating, @Image, @Director, @Description)";
-                    using (var command = new MySqlCommand(query, connection))
+
+                    // provjerava se postoji li film koji se sprema u korisnikovoj listi
+                    var checkQuery = "SELECT COUNT(*) FROM UserMovies WHERE UserId = @idKorisnika AND MovieName = @imeFilma";
+                    using (var checkCommand = new MySqlCommand(checkQuery, connection))
                     {
-                        command.Parameters.AddWithValue("@UserId", userId); // Replace with the actual user ID
-                        command.Parameters.AddWithValue("@MovieName", _currentMovie.Ime);
-                        command.Parameters.AddWithValue("@Rating", _currentMovie.Ocjena);
-                        command.Parameters.AddWithValue("@Image", _currentMovie.Image);
-                        command.Parameters.AddWithValue("@Director", _currentMovie.Director);
-                        command.Parameters.AddWithValue("@Description", _currentMovie.Opis);
-                        command.ExecuteNonQuery();
+                        checkCommand.Parameters.AddWithValue("@idKorisnika", userId);
+                        checkCommand.Parameters.AddWithValue("@imeFilma", _trenutniFilm.Ime);
+
+                        var movieCount = Convert.ToInt32(checkCommand.ExecuteScalar());
+
+                        if (movieCount > 0)
+                        {
+                            MessageBox.Show("Film je već u vašoj listi.");
+                            return;
+                        }
                     }
+
+                    var insertQuery = "INSERT INTO UserMovies (UserId, MovieName, Rating, Image, Director, Description) VALUES (@idKorisnika, @imeFilma, @Rating, @Slika, @Direktor, @Opis)";
+                    using (var insertCommand = new MySqlCommand(insertQuery, connection))
+                    {
+                        insertCommand.Parameters.AddWithValue("@idKorisnika", userId);
+                        insertCommand.Parameters.AddWithValue("@imeFilma", _trenutniFilm.Ime);
+                        insertCommand.Parameters.AddWithValue("@Rating", _trenutniFilm.Ocjena);
+                        insertCommand.Parameters.AddWithValue("@Slika", _trenutniFilm.Image);
+                        insertCommand.Parameters.AddWithValue("@Direktor", _trenutniFilm.Director);
+                        insertCommand.Parameters.AddWithValue("@Opis", _trenutniFilm.Opis);
+                        insertCommand.ExecuteNonQuery();
+                    }
+
+                    MessageBox.Show("Film je uspješno spremljen.");
                 }
-                MessageBox.Show("Movie saved successfully.");
             }
         }
 
@@ -74,24 +94,24 @@ namespace SIDEBAR.VIŠE.View
 
             if (userId == 0)
             {
-                MessageBox.Show("User ID not found. Please log in again.");
+                MessageBox.Show("Nije pronađen user ID.");
                 return;
             }
-            if (_currentMovie != null)
+            if (_trenutniFilm != null)
             {
-                string connectionString = "server=192.168.1.20;database=userdatabase;uid=root;pwd=ADGe96zn;"; // Replace with your connection string
+                string connectionString = "server=88.207.112.60;database=userdatabase;uid=root;pwd=ADGe96zn;";
                 using (var connection = new MySqlConnection(connectionString))
                 {
                     connection.Open();
-                    var query = "DELETE FROM UserMovies WHERE UserId = @UserId AND MovieName = @MovieName";
+                    var query = "DELETE FROM UserMovies WHERE UserId = @idKorisnika AND MovieName = @imeFilma";
                     using (var command = new MySqlCommand(query, connection))
                     {
-                        command.Parameters.AddWithValue("@UserId", userId); // Replace with the actual user ID
-                        command.Parameters.AddWithValue("@MovieName", _currentMovie.Ime);
+                        command.Parameters.AddWithValue("@idKOrisnika", userId);
+                        command.Parameters.AddWithValue("@imeFilma", _trenutniFilm.Ime);
                         command.ExecuteNonQuery();
                     }
                 }
-                MessageBox.Show("Movie removed successfully.");
+                MessageBox.Show("Film je uspješno izbrisan sa liste.");
             }
         }
     }

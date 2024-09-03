@@ -89,7 +89,6 @@ namespace SIDEBAR.VIŠE.View
                 new Movie ("Pulp Fiction (1994)", 8.9, "/SLIKE/pulp.jpg" , "Quentin Tarantino","The lives of two mob hitmen, a boxer, a gangster and his wife, and a pair of diner bandits intertwine in four tales of violence and redemption.\r\n\r\n" ,ShowDescription),
                 new Movie ("Out of Liberty (2019)", 4.5, "/SLIKE/lib.jpg" , "Garrett Batty","Winter 1839. LIBERTY, MISSOURI. Local jailer, Samuel Tillery (Jasen Wade) is tasked with watching Missouri's most wanted men as they await their upcoming hearing. Caught between the local Missourians' increased drive to remove the prisoners, and the prisoners' desperate efforts to survive, Tillery is pushed beyond what any lawman can endure. \r\n" ,ShowDescription),
                 new Movie ("The Dictator (2012)", 6.5, "/SLIKE/dict.jpg" , "Larry Charles","The heroic story of a dictator who risked his life to ensure that democracy would never come to the country he so lovingly oppressed.\r\n\r\n" ,ShowDescription)
-                //new Movie ("", 0, "" , "","" ,ShowDescription)
               
 
 

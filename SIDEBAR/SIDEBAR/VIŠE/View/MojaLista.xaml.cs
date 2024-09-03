@@ -20,18 +20,18 @@ namespace SIDEBAR.VIŠE.View
 
             if (userId == 0)
             {
-                MessageBox.Show("User ID not found. Please log in again.");
+                MessageBox.Show("Nije pronađen User ID.");
                 return;
             }
-            string connectionString = "server=192.168.1.20;database=userdatabase;uid=root;pwd=ADGe96zn;"; // Replace with your connection string
+            string connectionString = "server=88.207.112.60;database=userdatabase;uid=root;pwd=ADGe96zn;";
             var movies = new List<Movie>();
             using (var connection = new MySqlConnection(connectionString))
             {
                 connection.Open();
-                var query = "SELECT * FROM UserMovies WHERE UserId = @UserId";
+                var query = "SELECT * FROM UserMovies WHERE UserId = @idKorisnika";
                 using (var command = new MySqlCommand(query, connection))
                 {
-                    command.Parameters.AddWithValue("@UserId", userId); // Replace with the actual user ID
+                    command.Parameters.AddWithValue("@idKorisnika", userId);
                     using (var reader = command.ExecuteReader())
                     {
                         while (reader.Read())
@@ -42,7 +42,7 @@ namespace SIDEBAR.VIŠE.View
                                 reader["Image"].ToString(),
                                 reader["Director"].ToString(),
                                 reader["Description"].ToString(),
-                                null); // You might need to modify this part
+                                null);
                             movies.Add(movie);
                         }
                     }

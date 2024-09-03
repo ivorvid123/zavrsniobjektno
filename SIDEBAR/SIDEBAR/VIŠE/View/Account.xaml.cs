@@ -8,16 +8,16 @@ namespace SIDEBAR.VIŠE.View
 {
     public partial class Account : UserControl, INotifyPropertyChanged
     {
-        // Connection string for MySQL database
-        private const string ConnectionString = "Server=192.168.1.20;Database=userdatabase;uid=root;Password=ADGe96zn;";
+        // konekcija na mysql bazu podataka
+        private const string ConnectionString = "Server=88.207.112.60;Database=userdatabase;uid=root;Password=ADGe96zn;";
 
-        private User _currentUser;
-        public User CurrentUser
+        private User _trenutniKorisnik;
+        public User TrenutniKorisnik
         {
-            get { return _currentUser; }
+            get { return _trenutniKorisnik; }
             set
             {
-                _currentUser = value;
+                _trenutniKorisnik = value;
                 OnPropertyChanged("CurrentUser");
                 OnPropertyChanged("UserEmail");
                 OnPropertyChanged("UserDate");
@@ -27,13 +27,12 @@ namespace SIDEBAR.VIŠE.View
         public Account()
         {
             InitializeComponent();
-            DataContext = this; // Set DataContext to this UserControl
-            LoadUserData(); // Load the user data when the control is initialized
+            DataContext = this;
+            LoadUserData();
         }
 
         private void LoadUserData()
         {
-            // Retrieve the user ID from SessionManager
             int userId = SessionManager.LoggedInUserId;
 
             if (userId == 0)
@@ -51,14 +50,13 @@ namespace SIDEBAR.VIŠE.View
                     connection.Open();
                     using (var command = new MySqlCommand(query, connection))
                     {
-                        // Use the user ID stored in SessionManager
                         command.Parameters.AddWithValue("@UserId", userId);
 
                         using (var reader = command.ExecuteReader())
                         {
                             if (reader.Read())
                             {
-                                CurrentUser = new User
+                                TrenutniKorisnik = new User
                                 {
                                     Email = reader["Email"].ToString(),
                                     RegistrationDate = Convert.ToDateTime(reader["Registration_Date"])
@@ -66,20 +64,22 @@ namespace SIDEBAR.VIŠE.View
                             }
                             else
                             {
-                                MessageBox.Show("No user data found for the given ID.");
+                                MessageBox.Show("Nisu pronađeni podaci za trenutni userID.");
                             }
                         }
                     }
                 }
                 catch (Exception ex)
                 {
-                    MessageBox.Show($"Error loading user data: {ex.Message}");
+                    MessageBox.Show($"Greška pri učitavanju korisničkih podataka: {ex.Message}");
                 }
             }
         }
 
         private void Close_Click(object sender, RoutedEventArgs e)
         {
+            LoginWindow loginWindow = new LoginWindow();
+            loginWindow.Show();
             Window window = Window.GetWindow(this);
             if (window != null)
             {
@@ -87,18 +87,16 @@ namespace SIDEBAR.VIŠE.View
             }
         }
 
-        // User class for data binding
         public class User
         {
             public string Email { get; set; }
             public DateTime RegistrationDate { get; set; }
         }
 
-        public string UserEmail => CurrentUser?.Email;
+        public string UserEmail => TrenutniKorisnik?.Email;
 
-        public string UserDate => CurrentUser?.RegistrationDate.ToString("yyyy-MM-dd");
+        public string UserDate => TrenutniKorisnik?.RegistrationDate.ToString("yyyy-MM-dd");
 
-        // INotifyPropertyChanged implementation to notify the UI about property changes
         public event PropertyChangedEventHandler PropertyChanged;
         protected virtual void OnPropertyChanged(string propertyName)
         {

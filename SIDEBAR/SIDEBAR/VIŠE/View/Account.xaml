@@ -6,7 +6,6 @@
              xmlns:local="clr-namespace:SIDEBAR.VIŠE.View"
              mc:Ignorable="d" d:DesignWidth="700" d:DesignHeight="501">
 
-    <!-- Wrapping the entire content in a Viewbox for scaling -->
     <Viewbox Stretch="Uniform">
         <StackPanel Width="700" Height="492">
             <TextBlock Text="Vaš Account!"
@@ -23,7 +22,6 @@
                 </Border>
                 <Border Width="456" Height="290" Background="Orange" CornerRadius="40">
                     <StackPanel>
-                        <!-- Label for email -->
                         <TextBlock Text="EMAIL:"
                                    Foreground="Black"
                                    FontSize="24"
@@ -31,7 +29,6 @@
                                    Margin="10"
                                    HorizontalAlignment="Center"/>
 
-                        <!-- Email text block -->
                         <TextBlock 
                              Text="{Binding UserEmail}" 
                              Background="Transparent"
@@ -45,7 +42,6 @@
                              HorizontalAlignment="Center"
                              Width="456"/>
 
-                        <!-- Label for registration date -->
                         <TextBlock Text="ČLAN OD:"
                                    Foreground="Black"
                                    FontSize="24"
@@ -53,7 +49,6 @@
                                    Margin="10"
                                    HorizontalAlignment="Center"/>
 
-                        <!-- Registration date text block -->
                         <TextBlock
                              Text="{Binding UserDate}"
                              Foreground="Black"

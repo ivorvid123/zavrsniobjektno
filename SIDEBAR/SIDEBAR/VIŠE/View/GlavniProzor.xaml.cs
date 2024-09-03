@@ -15,9 +15,7 @@ using System.Windows.Shapes;
 
 namespace SIDEBAR.VIŠE.View
 {
-    /// <summary>
-    /// Interaction logic for GlavniProzor.xaml
-    /// </summary>
+
     public partial class GlavniProzor : UserControl
     {
         public GlavniProzor()

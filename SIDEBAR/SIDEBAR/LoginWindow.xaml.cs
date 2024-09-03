@@ -8,7 +8,7 @@ namespace SIDEBAR
 {
     public partial class LoginWindow : Window
     {
-        private string connectionString = "server=192.168.1.20;database=userdatabase;uid=root;pwd=ADGe96zn;";
+        private string connectionString = "server=88.207.112.60;database=userdatabase;uid=root;pwd=ADGe96zn;";
 
         public LoginWindow()
         {
@@ -18,40 +18,36 @@ namespace SIDEBAR
         private void LoginButton_Click(object sender, RoutedEventArgs e)
         {
             string email = txtEmail.Text;
-            string password = txtPassword.Password;
+            string lozinka = txtPassword.Password;
 
             using (MySqlConnection conn = new MySqlConnection(connectionString))
             {
                 try
                 {
                     conn.Open();
-                    // Updated query to retrieve the user's ID
-                    string query = "SELECT id FROM users WHERE email = @Email AND password = @Password";
+                    // dobivanje vrjednosti id korisnika koji se prijavljuje
+                    string query = "SELECT id FROM users WHERE email = @Email AND password = @Lozinka";
                     MySqlCommand cmd = new MySqlCommand(query, conn);
                     cmd.Parameters.AddWithValue("@Email", email);
-                    cmd.Parameters.AddWithValue("@Password", password);  // Ensure passwords are hashed in production
+                    cmd.Parameters.AddWithValue("@Lozinka", lozinka);
 
                     object result = cmd.ExecuteScalar();
 
                     if (result != null)
                     {
-                        // Store the user ID upon successful login
                         SessionManager.LoggedInUserId = Convert.ToInt32(result);
-
-                        MessageBox.Show($"User ID Set: {SessionManager.LoggedInUserId}");
-                        // Open the main window and close the login window
                         MainWindow mainWindow = new MainWindow();
                         mainWindow.Show();
                         this.Close();
                     }
                     else
                     {
-                        MessageBox.Show("Invalid email or password.");
+                        MessageBox.Show("Pogrešan email ili lozinka.");
                     }
                 }
                 catch (Exception ex)
                 {
-                    MessageBox.Show($"An error occurred: {ex.Message}");
+                    MessageBox.Show($"Dogodila se greška: {ex.Message}");
                 }
             }
         }
@@ -87,7 +83,6 @@ namespace SIDEBAR
 
         private void TitleBar_MouseLeftButtonDown(object sender, MouseButtonEventArgs e)
         {
-            // Initiates the dragging of the window.
             if (e.ButtonState == MouseButtonState.Pressed)
             {
                 this.DragMove();
@@ -95,7 +90,6 @@ namespace SIDEBAR
         }
     }
 
-    // Static class to store session information
     public static class SessionManager
     {
         public static int LoggedInUserId { get; set; }

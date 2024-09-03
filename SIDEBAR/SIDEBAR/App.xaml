@@ -3,22 +3,18 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              xmlns:local="clr-namespace:SIDEBAR"
              xmlns:ViewModel="clr-namespace:SIDEBAR.VIŠE.ViewModel"
-             xmlns:View="clr-namespace:SIDEBAR.VIŠE.View"
-             StartupUri="MainWindow.xaml">
+             xmlns:View="clr-namespace:SIDEBAR.VIŠE.View">
     <Application.Resources>
         <ResourceDictionary>
             <ResourceDictionary.MergedDictionaries>
-                <!-- Merge external resource dictionaries -->
                 <ResourceDictionary Source="Tema/HomeGumb.xaml"/>
                 <ResourceDictionary Source="Tema/TextboxTema.xaml"/>
             </ResourceDictionary.MergedDictionaries>
 
-            <!-- DataTemplates for ViewModel-View binding -->
             <DataTemplate DataType="{x:Type ViewModel:HomeView}">
                 <View:GlavniProzor/>
             </DataTemplate>
 
-            <!-- Define styles -->
             <Style x:Key="titleText" TargetType="TextBlock">
                 <Setter Property="FontSize" Value="32"/>
                 <Setter Property="FontWeight" Value="Bold"/>

@@ -20,7 +20,6 @@
             <Setter Property="Background" Value="Gray"/>
             <Setter Property="BorderBrush" Value="Black"/>
 
-            <!-- Theme Color -->
             <Setter Property="Foreground" Value="White"/>
             <Setter Property="FontWeight" Value="Bold"/>
             <Setter Property="Padding" Value="10,5"/>
@@ -32,17 +31,14 @@
                     <ControlTemplate TargetType="Button">
                         <Border Background="{TemplateBinding Background}"
                                 CornerRadius="10">
-                            <!-- Rounded Edges -->
                             <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
                         </Border>
                         <ControlTemplate.Triggers>
                             <Trigger Property="IsMouseOver" Value="True">
                                 <Setter Property="Background" Value="#f8a727"/>
-                                <!-- Lighter Theme Color on Hover -->
                             </Trigger>
                             <Trigger Property="IsPressed" Value="True">
                                 <Setter Property="Background" Value="#d49331"/>
-                                <!-- Darker Theme Color on Click -->
                             </Trigger>
                         </ControlTemplate.Triggers>
                     </ControlTemplate>
@@ -50,7 +46,6 @@
             </Setter>
         </Style>
 
-        <!-- Style for TextBoxes -->
         <Style TargetType="TextBox">
             <Setter Property="Foreground" Value="Black"/>
             <Setter Property="Padding" Value="10"/>
@@ -71,7 +66,6 @@
                         <ControlTemplate.Triggers>
                             <Trigger Property="IsFocused" Value="True">
                                 <Setter Property="BorderBrush" Value="#FEB337"/>
-                                <!-- Highlight Color on Focus -->
                             </Trigger>
                         </ControlTemplate.Triggers>
                     </ControlTemplate>
@@ -79,7 +73,6 @@
             </Setter>
         </Style>
 
-        <!-- Style for PasswordBoxes -->
         <Style TargetType="PasswordBox">
             <Setter Property="Foreground" Value="Black"/>
             <Setter Property="Padding" Value="10"/>
@@ -100,7 +93,6 @@
                         <ControlTemplate.Triggers>
                             <Trigger Property="IsFocused" Value="True">
                                 <Setter Property="BorderBrush" Value="#FEB337"/>
-                                <!-- Highlight Color on Focus -->
                             </Trigger>
                         </ControlTemplate.Triggers>
                     </ControlTemplate>
@@ -114,29 +106,25 @@
             <ColumnDefinition Width="689*"/>
             <ColumnDefinition Width="112*"/>
         </Grid.ColumnDefinitions>
-        <!-- Top Bar with Minimize and Close Buttons -->
         <DockPanel  MouseLeftButtonDown="TitleBar_MouseLeftButtonDown" LastChildFill="True" Background="#FEB337" Grid.ColumnSpan="2" >
             <StackPanel Orientation="Horizontal" HorizontalAlignment="Right" DockPanel.Dock="Top">
-                <!-- Minimize Button -->
+                <!-- tipka za minimiziranje -->
                 <Button Width="30" Height="30" Background="Transparent" BorderBrush="Red" Click="Minimize_Click">
                     <Path Data="M 0,0 L 10,0" Stroke="White" StrokeThickness="2" HorizontalAlignment="Center" VerticalAlignment="Center"/>
                 </Button>
 
-                <!-- Close Button -->
+                <!-- tipka za zatvaranje -->
                 <Button Width="30" Height="30" Background="Transparent" BorderBrush="Transparent" Click="Close_Click">
                     <Path Data="M 0,0 L 10,10 M 0,10 L 10,0" Stroke="White" StrokeThickness="2" HorizontalAlignment="Center" VerticalAlignment="Center"/>
                 </Button>
             </StackPanel>
 
-            <!-- Main Content -->
             <Grid Margin="0,40,0,0">
-                <!-- Margin adjusted to leave space for the top bar -->
                 <Grid.ColumnDefinitions>
                     <ColumnDefinition Width="1*"/>
                     <ColumnDefinition Width="2*"/>
                 </Grid.ColumnDefinitions>
 
-                <!-- Left Side (for Registration) -->
                 <Border  Grid.ColumnSpan="2" Margin="0,-80,533,0">
                     <Border.Background>
                         <LinearGradientBrush StartPoint="0,0" EndPoint="1,1">
@@ -184,7 +172,6 @@
                     </Grid>
                 </Border>
 
-                <!-- Right Side (for Login) -->
 
                 <Border Background="#FEB337" Grid.Column="1" CornerRadius="5" Margin="0,-50,0,0">
                     <StackPanel VerticalAlignment="Center" HorizontalAlignment="Center" Margin="20">
@@ -223,13 +210,11 @@
                         <TextBlock Text="Registrirajte se" FontSize="24" FontWeight="Bold" Foreground="#272426"/>
                         <TextBlock Text="Upišite željeni Emaili šifru sa kojima se želite registrirati" Margin="0 10 0 15" Foreground="#272426"/>
 
-                        <!-- Email Label and TextBox -->
                         <StackPanel Orientation="Horizontal" Margin="24 5 0 10">
                             <TextBlock Text="Email:" VerticalAlignment="Center" Foreground="#272426" Margin="0 0 10 0"/>
                             <TextBox x:Name="txtEmail" Width="200"/>
                         </StackPanel>
 
-                        <!-- Password Label and PasswordBox -->
                         <StackPanel Orientation="Horizontal" Margin="11 5 0 20">
                             <TextBlock Text="Lozinka:" VerticalAlignment="Center" Foreground="#272426" Margin="0 0 10 0"/>
                             <PasswordBox x:Name="txtPassword" Width="200"/>
